@@ -1,0 +1,283 @@
+ERROR - 2022-12-09 03:54:47 --> mysqli_sql_exception: Table 'koperasiv1.tbaccounts' doesn't exist in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/neracamodel.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Akuntansi.php(18): App\Models\Neracamodel->getDataAwal()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Akuntansi->neracaawal()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akuntansi))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-09 03:54:47 --> Table 'koperasiv1.tbaccounts' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `b`.`account_name`
+FROM `tbneraca` `a`
+JOIN `tbaccounts` `b` ON `a`.`kode_akun`=`b`.`no_akun`
+WHERE `b`.`deleted_at` IS NULL
+ORDER BY `a`.`kode_akun` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `b`.`account_name`
+FROM `tbneraca` `a`
+JOIN `tbaccounts` `b` ON `a`.`kode_akun`=`b`.`no_akun`
+WHERE `b`.`deleted_at` IS NULL
+ORDER BY `a`.`kode_akun` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `b`.`account_name`
+FROM `tbneraca` `a`
+JOIN `tbaccounts` `b` ON `a`.`kode_akun`=`b`.`no_akun`
+WHERE `b`.`deleted_at` IS NULL
+ORDER BY `a`.`kode_akun` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`account_name`
+FROM `tbneraca` `a`
+JOIN `tbaccounts` `b` ON `a`.`kode_akun`=`b`.`no_akun`
+WHERE `b`.`deleted_at` IS NULL
+ORDER BY `a`.`kode_akun` ASC', [], false)
+ 5 APPPATH/Models/neracamodel.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Akuntansi.php(18): App\Models\Neracamodel->getDataAwal()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Akuntansi->neracaawal()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akuntansi))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 04:35:20 --> Class "App\Controllers\Jurnalmodel" not found
+in APPPATH/Controllers/Simpanan.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Simpanan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 04:48:09 --> Too few arguments to function App\Models\Neracamodel::totalBalance(), 1 passed in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Views/print/neracaawal.php on line 21 and exactly 2 expected
+in APPPATH/Models/neracamodel.php on line 40.
+ 1 APPPATH/Views/print/neracaawal.php(21): App\Models\Neracamodel->totalBalance('01.01')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/print/neracaawal.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('print/neracaawal', [], true)
+ 5 APPPATH/Controllers/Akuntansi.php(92): view('print/neracaawal', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Akuntansi->printneracaawal()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akuntansi))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 20:35:50 --> Undefined variable $i
+in APPPATH/Views/main/tagihansimpananwajib.php on line 166.
+ 1 APPPATH/Views/main/tagihansimpananwajib.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'APPPATH/Views/main/tagihansimpananwajib.php', 166)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tagihansimpananwajib.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tagihansimpananwajib', [], true)
+ 5 APPPATH/Controllers/Simpanan.php(164): view('main/tagihansimpananwajib', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 20:36:19 --> Undefined variable $i
+in APPPATH/Views/main/tagihansimpananwajib.php on line 166.
+ 1 APPPATH/Views/main/tagihansimpananwajib.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'APPPATH/Views/main/tagihansimpananwajib.php', 166)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tagihansimpananwajib.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tagihansimpananwajib', [], true)
+ 5 APPPATH/Controllers/Simpanan.php(164): view('main/tagihansimpananwajib', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 20:36:57 --> Undefined variable $tahun
+in APPPATH/Views/main/tagihansimpananwajib.php on line 190.
+ 1 APPPATH/Views/main/tagihansimpananwajib.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tahun', 'APPPATH/Views/main/tagihansimpananwajib.php', 190)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tagihansimpananwajib.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tagihansimpananwajib', [], true)
+ 5 APPPATH/Controllers/Simpanan.php(164): view('main/tagihansimpananwajib', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 20:37:36 --> Undefined property: App\Controllers\Simpanan::$akunmodel
+in APPPATH/Controllers/Simpanan.php on line 160.
+ 1 APPPATH/Controllers/Simpanan.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Simpanan::$akunmodel', 'APPPATH/Controllers/Simpanan.php', 160)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 20:38:01 --> Undefined variable $results
+in APPPATH/Views/main/tagihansimpananwajib.php on line 251.
+ 1 APPPATH/Views/main/tagihansimpananwajib.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'APPPATH/Views/main/tagihansimpananwajib.php', 251)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tagihansimpananwajib.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tagihansimpananwajib', [], true)
+ 5 APPPATH/Controllers/Simpanan.php(169): view('main/tagihansimpananwajib', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 20:38:13 --> Attempt to read property "id" on array
+in APPPATH/Views/main/tagihansimpananwajib.php on line 256.
+ 1 APPPATH/Views/main/tagihansimpananwajib.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH/Views/main/tagihansimpananwajib.php', 256)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tagihansimpananwajib.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tagihansimpananwajib', [], true)
+ 5 APPPATH/Controllers/Simpanan.php(169): view('main/tagihansimpananwajib', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 20:38:48 --> Undefined variable $akun_debet
+in APPPATH/Views/main/tagihansimpananwajib.php on line 357.
+ 1 APPPATH/Views/main/tagihansimpananwajib.php(357): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $akun_debet', 'APPPATH/Views/main/tagihansimpananwajib.php', 357)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tagihansimpananwajib.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tagihansimpananwajib', [], true)
+ 5 APPPATH/Controllers/Simpanan.php(169): view('main/tagihansimpananwajib', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 20:40:08 --> Undefined array key 0
+in APPPATH/Views/main/tagihansimpananwajib.php on line 169.
+ 1 APPPATH/Views/main/tagihansimpananwajib.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/main/tagihansimpananwajib.php', 169)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tagihansimpananwajib.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tagihansimpananwajib', [], true)
+ 5 APPPATH/Controllers/Simpanan.php(169): view('main/tagihansimpananwajib', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 21:20:21 --> Too few arguments to function App\Models\Simpananmodel::getTagihanWajib(), 0 passed in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Simpanan.php on line 162 and exactly 2 expected
+in APPPATH/Models/simpananmodel.php on line 50.
+ 1 APPPATH/Controllers/Simpanan.php(162): App\Models\Simpananmodel->getTagihanWajib()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 21:21:51 --> Undefined variable $results_0
+in APPPATH/Controllers/Simpanan.php on line 174.
+ 1 APPPATH/Controllers/Simpanan.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results_0', 'APPPATH/Controllers/Simpanan.php', 174)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-09 21:23:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where tgl_transaksi>='2022-02-01') as id_transaksi, (select debit from tbsimp...' at line 1 in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, (...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, (...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, (...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, (...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/simpananmodel.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Simpanan.php(172): App\Models\Simpananmodel->getTagihanWajib('2022-02-01', '2022-02-31')
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-09 21:23:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where tgl_transaksi>='2022-02-01') as id_transaksi, (select debit from tbsimp...' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, (select id_transaksi from tbsimpananwajib b where b.id_anggota=a.id where tgl_transaksi>=\'2022-02-01\') as id_transaksi, (select debit from tbsimpananwajib b where b.id_anggota=a.id) as debet
+FROM `tbusers` `a`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, (select id_transaksi from tbsimpananwajib b where b.id_anggota=a.id where tgl_transaksi>=\'2022-02-01\') as id_transaksi, (select debit from tbsimpananwajib b where b.id_anggota=a.id) as debet
+FROM `tbusers` `a`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, (select id_transaksi from tbsimpananwajib b where b.id_anggota=a.id where tgl_transaksi>=\'2022-02-01\') as id_transaksi, (select debit from tbsimpananwajib b where b.id_anggota=a.id) as debet
+FROM `tbusers` `a`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, (select id_transaksi from tbsimpananwajib b where b.id_anggota=a.id where tgl_transaksi>=\'2022-02-01\') as id_transaksi, (select debit from tbsimpananwajib b where b.id_anggota=a.id) as debet
+FROM `tbusers` `a`', [], false)
+ 5 APPPATH/Models/simpananmodel.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Simpanan.php(172): App\Models\Simpananmodel->getTagihanWajib('2022-02-01', '2022-02-31')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-09 21:24:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where b.tgl_transaksi>='2022-02-01') as id_transaksi, (select debit from tbsi...' at line 1 in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, (...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, (...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, (...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, (...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/simpananmodel.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Simpanan.php(172): App\Models\Simpananmodel->getTagihanWajib('2022-02-01', '2022-02-31')
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-09 21:24:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where b.tgl_transaksi>='2022-02-01') as id_transaksi, (select debit from tbsi...' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, (select id_transaksi from tbsimpananwajib b where b.id_anggota=a.id where b.tgl_transaksi>=\'2022-02-01\') as id_transaksi, (select debit from tbsimpananwajib b where b.id_anggota=a.id) as debet
+FROM `tbusers` `a`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, (select id_transaksi from tbsimpananwajib b where b.id_anggota=a.id where b.tgl_transaksi>=\'2022-02-01\') as id_transaksi, (select debit from tbsimpananwajib b where b.id_anggota=a.id) as debet
+FROM `tbusers` `a`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, (select id_transaksi from tbsimpananwajib b where b.id_anggota=a.id where b.tgl_transaksi>=\'2022-02-01\') as id_transaksi, (select debit from tbsimpananwajib b where b.id_anggota=a.id) as debet
+FROM `tbusers` `a`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, (select id_transaksi from tbsimpananwajib b where b.id_anggota=a.id where b.tgl_transaksi>=\'2022-02-01\') as id_transaksi, (select debit from tbsimpananwajib b where b.id_anggota=a.id) as debet
+FROM `tbusers` `a`', [], false)
+ 5 APPPATH/Models/simpananmodel.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Simpanan.php(172): App\Models\Simpananmodel->getTagihanWajib('2022-02-01', '2022-02-31')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 21:43:58 --> Undefined property: stdClass::$debit
+in APPPATH/Views/main/tagihansimpananwajib.php on line 251.
+ 1 APPPATH/Views/main/tagihansimpananwajib.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$debit', 'APPPATH/Views/main/tagihansimpananwajib.php', 251)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tagihansimpananwajib.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tagihansimpananwajib', [], true)
+ 5 APPPATH/Controllers/Simpanan.php(180): view('main/tagihansimpananwajib', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 21:44:07 --> Undefined property: stdClass::$debit
+in APPPATH/Views/main/tagihansimpananwajib.php on line 251.
+ 1 APPPATH/Views/main/tagihansimpananwajib.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$debit', 'APPPATH/Views/main/tagihansimpananwajib.php', 251)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tagihansimpananwajib.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tagihansimpananwajib', [], true)
+ 5 APPPATH/Controllers/Simpanan.php(180): view('main/tagihansimpananwajib', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 21:47:35 --> Cannot use object of type stdClass as array
+in APPPATH/Views/main/tagihansimpananwajib.php on line 275.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tagihansimpananwajib', [], true)
+ 4 APPPATH/Controllers/Simpanan.php(180): view('main/tagihansimpananwajib', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->tagihansimpananwajib()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 23:42:49 --> Undefined array key "debet"
+in APPPATH/Controllers/Simpanan.php on line 197.
+ 1 APPPATH/Controllers/Simpanan.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "debet"', 'APPPATH/Controllers/Simpanan.php', 197)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->deletesimpananpokok()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 23:43:59 --> Undefined array key "debet"
+in APPPATH/Controllers/Simpanan.php on line 197.
+ 1 APPPATH/Controllers/Simpanan.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "debet"', 'APPPATH/Controllers/Simpanan.php', 197)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->deletesimpananpokok()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

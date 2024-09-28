@@ -1,0 +1,10 @@
+CRITICAL - 2022-12-20 02:24:17 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/pengajuanmodel.php on line 69
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/pengajuanmodel.php(69): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/pengajuanmodel.php(79): App\Models\Pengajuanmodel->_get_datatables_query('tbpengajuanpinjaman', [...], [...], [...])
+ 3 APPPATH/Controllers/Pengajuanpinjaman.php(57): App\Models\Pengajuanmodel->get_datatables('tbpengajuanpinjaman', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

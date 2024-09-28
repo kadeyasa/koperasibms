@@ -1,0 +1,485 @@
+ERROR - 2022-12-06 08:38:05 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', '', 'koperasiv1', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-06 08:38:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbusers`
+WHERE `username` = :username:
+AND `status` = :status:
+AND `tbusers`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Auth->login()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-06 08:38:10 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', '', 'koperasiv1', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-06 08:38:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbusers`
+WHERE `username` = :username:
+AND `status` = :status:
+AND `tbusers`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Auth->login()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-06 08:38:23 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', '', 'koperasiv1', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-06 08:38:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbusers`
+WHERE `username` = :username:
+AND `status` = :status:
+AND `tbusers`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Auth->login()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-06 08:38:30 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', '', 'koperasiv1', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-06 08:38:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbusers`
+WHERE `username` = :username:
+AND `status` = :status:
+AND `tbusers`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Auth->login()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-06 08:38:39 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', '', 'koperasiv1', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-06 08:38:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbusers`
+WHERE `username` = :username:
+AND `status` = :status:
+AND `tbusers`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Auth->login()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-06 08:39:50 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', '', 'koperasiv1', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-06 08:39:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbusers`
+WHERE `username` = :username:
+AND `status` = :status:
+AND `tbusers`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Auth->login()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-06 08:40:14 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', '', 'koperasiv1', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Auth->login()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-06 08:40:14 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbusers`
+WHERE `username` = :username:
+AND `status` = :status:
+AND `tbusers`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Auth.php(86): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Auth->login()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 09:09:25 --> Class "App\Controllers\Simpananmodel" not found
+in APPPATH/Controllers/Simpanan.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Simpanan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 09:09:59 --> Class "App\Controllers\Simpananmodel" not found
+in APPPATH/Controllers/Simpanan.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Simpanan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 09:22:13 --> Undefined property: App\Controllers\Simpanan::$anggotamodel
+in APPPATH/Controllers/Simpanan.php on line 16.
+ 1 APPPATH/Controllers/Simpanan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Simpanan::$anggotamodel', 'APPPATH/Controllers/Simpanan.php', 16)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->simpananpokok()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 09:22:49 --> Undefined variable $total_anggota
+in APPPATH/Views/main/simpananpokok.php on line 387.
+ 1 APPPATH/Views/main/simpananpokok.php(387): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_anggota', 'APPPATH/Views/main/simpananpokok.php', 387)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/simpananpokok.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/simpananpokok', [], true)
+ 5 APPPATH/Controllers/Simpanan.php(19): view('main/simpananpokok', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->simpananpokok()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 11:05:56 --> Class "App\Models\anggotaanmodel" not found
+in APPPATH/Controllers/Simpanan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Simpanan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 11:06:38 --> Undefined constant "App\Controllers\this"
+in APPPATH/Controllers/Simpanan.php on line 20.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->simpananpokok()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 23:13:32 --> Undefined array key "no_anggota"
+in APPPATH/Views/main/simpananpokok.php on line 224.
+ 1 APPPATH/Views/main/simpananpokok.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no_anggota"', 'APPPATH/Views/main/simpananpokok.php', 224)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/simpananpokok.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/simpananpokok', [], true)
+ 5 APPPATH/Controllers/Simpanan.php(22): view('main/simpananpokok', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->simpananpokok()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 23:20:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::order_by()
+in APPPATH/Models/simpananmodel.php on line 31.
+ 1 APPPATH/Controllers/Simpanan.php(18): App\Models\Simpananmodel->getSimpananPokok()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->simpananpokok()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 23:20:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH/Controllers/Simpanan.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->simpananpokok()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 23:22:13 --> Cannot use object of type stdClass as array
+in APPPATH/Views/main/simpananpokok.php on line 224.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/simpananpokok', [], true)
+ 4 APPPATH/Controllers/Simpanan.php(22): view('main/simpananpokok', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->simpananpokok()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 23:22:55 --> Cannot use object of type stdClass as array
+in APPPATH/Views/main/simpananpokok.php on line 224.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/simpananpokok', [], true)
+ 4 APPPATH/Controllers/Simpanan.php(22): view('main/simpananpokok', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->simpananpokok()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 23:23:39 --> Cannot use object of type stdClass as array
+in APPPATH/Views/main/simpananpokok.php on line 224.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/simpananpokok', [], true)
+ 4 APPPATH/Controllers/Simpanan.php(22): view('main/simpananpokok', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->simpananpokok()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 23:23:40 --> Cannot use object of type stdClass as array
+in APPPATH/Views/main/simpananpokok.php on line 224.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/simpananpokok', [], true)
+ 4 APPPATH/Controllers/Simpanan.php(22): view('main/simpananpokok', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->simpananpokok()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 23:54:41 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH/Controllers/Simpanan.php on line 39.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->savesimpananpokok()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 23:56:40 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH/Controllers/Simpanan.php on line 39.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->savesimpananpokok()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 23:57:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::set()
+in APPPATH/Models/simpananmodel.php on line 42.
+ 1 APPPATH/Controllers/Simpanan.php(57): App\Models\Simpananmodel->saveSaldoSimpanan([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->savesimpananpokok()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 23:58:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH/Models/simpananmodel.php on line 42.
+ 1 APPPATH/Controllers/Simpanan.php(57): App\Models\Simpananmodel->saveSaldoSimpanan([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Simpanan->savesimpananpokok()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

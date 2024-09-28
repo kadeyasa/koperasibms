@@ -1,0 +1,268 @@
+CRITICAL - 2022-12-03 01:07:34 --> Invalid file: main/profile_user.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/profile_user.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/profile_user', [], true)
+ 3 APPPATH/Controllers/Profile.php(28): view('main/profile_user')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->user()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:05:40 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 76.
+ 1 APPPATH/Controllers/Profile.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:09:43 --> Too few arguments to function CodeIgniter\Router\RouteCollection::post(), 1 passed in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Config/Routes.php on line 47 and at least 2 expected
+in SYSTEMPATH/Router/RouteCollection.php on line 896.
+ 1 APPPATH/Config/Routes.php(47): CodeIgniter\Router\RouteCollection->post('saveprofile')
+ 2 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:09:58 --> Too few arguments to function CodeIgniter\Router\RouteCollection::post(), 1 passed in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Config/Routes.php on line 47 and at least 2 expected
+in SYSTEMPATH/Router/RouteCollection.php on line 896.
+ 1 APPPATH/Config/Routes.php(47): CodeIgniter\Router\RouteCollection->post('saveprofile')
+ 2 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:10:20 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 76.
+ 1 APPPATH/Controllers/Profile.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:10:39 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 76.
+ 1 APPPATH/Controllers/Profile.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:11:06 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 79.
+ 1 APPPATH/Controllers/Profile.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 79)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:14:27 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 79.
+ 1 APPPATH/Controllers/Profile.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 79)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:14:55 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 79.
+ 1 APPPATH/Controllers/Profile.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 79)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:16:11 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 80.
+ 1 APPPATH/Controllers/Profile.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 80)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:16:15 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 80.
+ 1 APPPATH/Controllers/Profile.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 80)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:16:31 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 81.
+ 1 APPPATH/Controllers/Profile.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 81)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:16:37 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 81.
+ 1 APPPATH/Controllers/Profile.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 81)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:16:58 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 81.
+ 1 APPPATH/Controllers/Profile.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 81)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:17:26 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 74.
+ 1 APPPATH/Controllers/Profile.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 74)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:18:13 --> Undefined variable $error
+in APPPATH/Controllers/Profile.php on line 84.
+ 1 APPPATH/Controllers/Profile.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH/Controllers/Profile.php', 84)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:19:42 --> Undefined variable $email
+in APPPATH/Controllers/Profile.php on line 57.
+ 1 APPPATH/Controllers/Profile.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'APPPATH/Controllers/Profile.php', 57)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:23:50 --> Undefined variable $session
+in APPPATH/Controllers/Profile.php on line 82.
+ 1 APPPATH/Controllers/Profile.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH/Controllers/Profile.php', 82)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:23:55 --> Undefined variable $session
+in APPPATH/Controllers/Profile.php on line 82.
+ 1 APPPATH/Controllers/Profile.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH/Controllers/Profile.php', 82)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:24:01 --> Undefined variable $session
+in APPPATH/Controllers/Profile.php on line 82.
+ 1 APPPATH/Controllers/Profile.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH/Controllers/Profile.php', 82)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:24:49 --> Call to undefined method CodeIgniter\Session\Session::etFlashdata()
+in APPPATH/Controllers/Profile.php on line 82.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:25:17 --> Object of type CodeIgniter\Session\Session is not callable
+in APPPATH/Controllers/Profile.php on line 83.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:25:42 --> Object of type CodeIgniter\Session\Session is not callable
+in APPPATH/Controllers/Profile.php on line 83.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:25:49 --> Object of type CodeIgniter\Session\Session is not callable
+in APPPATH/Controllers/Profile.php on line 83.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:26:12 --> Object of type CodeIgniter\Session\Session is not callable
+in APPPATH/Controllers/Profile.php on line 83.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:26:25 --> Object of type CodeIgniter\Session\Session is not callable
+in APPPATH/Controllers/Profile.php on line 83.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:27:56 --> Object of type CodeIgniter\Session\Session is not callable
+in APPPATH/Controllers/Profile.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:28:36 --> Undefined variable $session
+in APPPATH/Controllers/Profile.php on line 84.
+ 1 APPPATH/Controllers/Profile.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH/Controllers/Profile.php', 84)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 05:28:49 --> Call to undefined method CodeIgniter\Session\Session::etFlashdata()
+in APPPATH/Controllers/Profile.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->saveprofile()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 09:04:46 --> Call to undefined function form_open()
+in APPPATH/Views/main/profile_koperasi.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/profile_koperasi', [], true)
+ 4 APPPATH/Controllers/Profile.php(26): view('main/profile_koperasi')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->koperasi()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 09:57:04 --> Unclosed '{' on line 107 does not match ')'
+in APPPATH/Controllers/Profile.php on line 146.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Profile.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Profile')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Profile')
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Profile', true)
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 09:58:10 --> Call to a member function getName() on null
+in APPPATH/Controllers/Profile.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->savekoperasi()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 10:00:00 --> Call to a member function getName() on null
+in APPPATH/Controllers/Profile.php on line 133.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->savekoperasi()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-03 10:01:25 --> Call to a member function getName() on null
+in APPPATH/Controllers/Profile.php on line 133.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->savekoperasi()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

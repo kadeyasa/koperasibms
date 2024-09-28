@@ -1,0 +1,723 @@
+CRITICAL - 2022-12-15 00:22:05 --> Kode Anggota harus diisi is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 323.
+ 1 SYSTEMPATH/Validation/Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Kode Anggota harus diisi')
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('0', '0', null, [...], [...])
+ 3 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH/Controllers/Datasimpanan.php(82): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->savesimpanan()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 02:57:51 --> Attempt to read property "nama_simpanan" on array
+in APPPATH/Controllers/Datasimpanan.php on line 106.
+ 1 APPPATH/Controllers/Datasimpanan.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_simpanan" on array', 'APPPATH/Controllers/Datasimpanan.php', 106)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->savesimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 02:59:26 --> Undefined variable $id_anggota
+in APPPATH/Controllers/Datasimpanan.php on line 106.
+ 1 APPPATH/Controllers/Datasimpanan.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_anggota', 'APPPATH/Controllers/Datasimpanan.php', 106)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->savesimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 02:59:58 --> Undefined variable $debet
+in APPPATH/Controllers/Datasimpanan.php on line 107.
+ 1 APPPATH/Controllers/Datasimpanan.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $debet', 'APPPATH/Controllers/Datasimpanan.php', 107)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->savesimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 03:46:07 --> Undefined property: App\Controllers\Datasimpanan::$jurnalmodel
+in APPPATH/Controllers/Datasimpanan.php on line 159.
+ 1 APPPATH/Controllers/Datasimpanan.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Datasimpanan::$jurnalmodel', 'APPPATH/Controllers/Datasimpanan.php', 159)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->savesimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 03:47:30 --> Undefined property: App\Controllers\Datasimpanan::$jurnalmodel
+in APPPATH/Controllers/Datasimpanan.php on line 161.
+ 1 APPPATH/Controllers/Datasimpanan.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Datasimpanan::$jurnalmodel', 'APPPATH/Controllers/Datasimpanan.php', 161)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->savesimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 03:48:13 --> Undefined property: App\Controllers\Datasimpanan::$mutasianggota
+in APPPATH/Controllers/Datasimpanan.php on line 191.
+ 1 APPPATH/Controllers/Datasimpanan.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Datasimpanan::$mutasianggota', 'APPPATH/Controllers/Datasimpanan.php', 191)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->savesimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 04:02:35 --> Undefined property: App\Controllers\Datasimpanan::$simpananmodel
+in APPPATH/Controllers/Datasimpanan.php on line 33.
+ 1 APPPATH/Controllers/Datasimpanan.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Datasimpanan::$simpananmodel', 'APPPATH/Controllers/Datasimpanan.php', 33)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-15 04:03:51 --> mysqli_sql_exception: Table 'koperasiv1.tbsimpanananggotad' doesn't exist in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/simpananmodel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Datasimpanan.php(35): App\Models\Simpananmodel->getSimpanananggota()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Datasimpanan->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-15 04:03:51 --> Table 'koperasiv1.tbsimpanananggotad' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `b`.`no_anggota`, `b`.`nama`, `c`.`nama_simpanan`
+FROM `tbsimpanananggotad` `a`
+JOIN `tbsetuppinjaman` `c` ON `c`.`id`=`a`.`id_jenis_simpanan`
+JOIN `tbanggota` `b` ON `b`.`id`=`a`.`id_anggota`
+ORDER BY `tgl` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `b`.`no_anggota`, `b`.`nama`, `c`.`nama_simpanan`
+FROM `tbsimpanananggotad` `a`
+JOIN `tbsetuppinjaman` `c` ON `c`.`id`=`a`.`id_jenis_simpanan`
+JOIN `tbanggota` `b` ON `b`.`id`=`a`.`id_anggota`
+ORDER BY `tgl` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `b`.`no_anggota`, `b`.`nama`, `c`.`nama_simpanan`
+FROM `tbsimpanananggotad` `a`
+JOIN `tbsetuppinjaman` `c` ON `c`.`id`=`a`.`id_jenis_simpanan`
+JOIN `tbanggota` `b` ON `b`.`id`=`a`.`id_anggota`
+ORDER BY `tgl` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`no_anggota`, `b`.`nama`, `c`.`nama_simpanan`
+FROM `tbsimpanananggotad` `a`
+JOIN `tbsetuppinjaman` `c` ON `c`.`id`=`a`.`id_jenis_simpanan`
+JOIN `tbanggota` `b` ON `b`.`id`=`a`.`id_anggota`
+ORDER BY `tgl` DESC', [], false)
+ 5 APPPATH/Models/simpananmodel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Datasimpanan.php(35): App\Models\Simpananmodel->getSimpanananggota()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 04:05:16 --> Attempt to read property "id_transaksi" on int
+in APPPATH/Views/main/simpanananggota.php on line 204.
+ 1 APPPATH/Views/main/simpanananggota.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_transaksi" on int', 'APPPATH/Views/main/simpanananggota.php', 204)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/simpanananggota.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/simpanananggota', [], true)
+ 5 APPPATH/Controllers/Datasimpanan.php(39): view('main/simpanananggota', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 04:06:53 --> Undefined variable $row
+in APPPATH/Views/main/simpanananggota.php on line 201.
+ 1 APPPATH/Views/main/simpanananggota.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH/Views/main/simpanananggota.php', 201)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/simpanananggota.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/simpanananggota', [], true)
+ 5 APPPATH/Controllers/Datasimpanan.php(39): view('main/simpanananggota', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 04:07:07 --> Attempt to read property "id" on int
+in APPPATH/Views/main/simpanananggota.php on line 203.
+ 1 APPPATH/Views/main/simpanananggota.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on int', 'APPPATH/Views/main/simpanananggota.php', 203)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/simpanananggota.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/simpanananggota', [], true)
+ 5 APPPATH/Controllers/Datasimpanan.php(39): view('main/simpanananggota', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 04:07:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResults()
+in APPPATH/Controllers/Datasimpanan.php on line 35.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 04:14:51 --> Cannot use object of type stdClass as array
+in APPPATH/Views/main/simpanananggota.php on line 237.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/simpanananggota', [], true)
+ 4 APPPATH/Controllers/Datasimpanan.php(39): view('main/simpanananggota', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 05:46:44 --> Cannot declare class App\Models\Serversidemodel, because the name is already in use
+in APPPATH/Models/datasimpananmodel.php on line 0.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-15 05:48:33 --> Undefined property: stdClass::$id_transaksi
+in APPPATH/Controllers/Datasimpanan.php on line 112.
+ 1 APPPATH/Controllers/Datasimpanan.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_transaksi', 'APPPATH/Controllers/Datasimpanan.php', 112)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-15 05:50:27 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/datasimpananmodel.php(65): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggo...', Array, Array, Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-15 05:50:27 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `tbsimpanananggota`
+JOIN `tbsetupsimpanan` ON `tbsetupsimpanan`.`id` = `tbsimpanananggota`.`id_jenis_simpanan`
+JOIN `tbanggota` ON `tbanggota`.`id` = `tbsimpanananggota`.`id_anggota`
+WHERE `id` != 0
+ORDER BY `tbsimpanananggota`.`id` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbsimpanananggota`
+JOIN `tbsetupsimpanan` ON `tbsetupsimpanan`.`id` = `tbsimpanananggota`.`id_jenis_simpanan`
+JOIN `tbanggota` ON `tbanggota`.`id` = `tbsimpanananggota`.`id_anggota`
+WHERE `id` != 0
+ORDER BY `tbsimpanananggota`.`id` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbsimpanananggota`
+JOIN `tbsetupsimpanan` ON `tbsetupsimpanan`.`id` = `tbsimpanananggota`.`id_jenis_simpanan`
+JOIN `tbanggota` ON `tbanggota`.`id` = `tbsimpanananggota`.`id_anggota`
+WHERE `id` != 0
+ORDER BY `tbsimpanananggota`.`id` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbsimpanananggota`
+JOIN `tbsetupsimpanan` ON `tbsetupsimpanan`.`id` = `tbsimpanananggota`.`id_jenis_simpanan`
+JOIN `tbanggota` ON `tbanggota`.`id` = `tbsimpanananggota`.`id_anggota`
+WHERE `id` != :id:
+ORDER BY `tbsimpanananggota`.`id` DESC', [...], false)
+ 5 APPPATH/Models/datasimpananmodel.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 05:51:45 --> Call to a member function where() on null
+in APPPATH/Models/serversidemodel.php on line 81.
+ 1 APPPATH/Controllers/Datasimpanan.php(117): App\Models\Serversidemodel->count_all('tbanggota', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 05:52:34 --> Call to a member function from() on null
+in APPPATH/Models/serversidemodel.php on line 83.
+ 1 APPPATH/Controllers/Datasimpanan.php(117): App\Models\Serversidemodel->count_all('tbanggota', 'ROOTPATH/public')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 05:52:50 --> Call to a member function where() on null
+in APPPATH/Models/serversidemodel.php on line 81.
+ 1 APPPATH/Controllers/Datasimpanan.php(117): App\Models\Serversidemodel->count_all('tbsimpanananggota', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 05:53:12 --> Call to a member function from() on null
+in APPPATH/Models/serversidemodel.php on line 83.
+ 1 APPPATH/Controllers/Datasimpanan.php(117): App\Models\Serversidemodel->count_all('tbsimpanananggota', [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 05:53:59 --> Call to a member function from() on null
+in APPPATH/Models/serversidemodel.php on line 83.
+ 1 APPPATH/Controllers/Datasimpanan.php(117): App\Models\Serversidemodel->count_all('tbsimpanananggota', [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 05:54:24 --> Call to a member function from() on null
+in APPPATH/Models/serversidemodel.php on line 83.
+ 1 APPPATH/Controllers/Datasimpanan.php(117): App\Models\Serversidemodel->count_all('tbsimpanananggota', [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 05:57:07 --> syntax error, unexpected variable "$i"
+in APPPATH/Models/datasimpananmodel.php on line 28.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/datasimpananmodel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\datasimpananmodel')
+ 3 APPPATH/Controllers/Datasimpanan.php(31): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\datasimpananmodel')
+ 4 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Datasimpanan->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 05:58:45 --> Undefined property: stdClass::$jumlah_simpanan
+in APPPATH/Controllers/Datasimpanan.php on line 118.
+ 1 APPPATH/Controllers/Datasimpanan.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$jumlah_simpanan', 'APPPATH/Controllers/Datasimpanan.php', 118)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:26:25 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:26:29 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:26:32 --> Undefined array key 4
+in APPPATH/Models/serversidemodel.php on line 47.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH/Models/serversidemodel.php', 47)
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:26:58 --> Undefined array key 4
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:26:59 --> Undefined array key 4
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:26:59 --> Undefined array key 4
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:27:00 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:27:00 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:27:45 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:28:04 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:28:04 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:28:53 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:28:58 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:28:58 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:29:02 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:29:03 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:29:04 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:29:05 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:29:06 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:29:06 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:29:07 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:29:08 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:29:08 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:29:09 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:29:09 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:29:18 --> Undefined array key 3
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:31:12 --> Undefined array key 4
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:31:12 --> Undefined array key 4
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:33:08 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:33:18 --> Undefined array key 5
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:33:18 --> Undefined array key 5
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:33:19 --> Undefined array key 6
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 6', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:35:20 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:35:49 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:36:08 --> Undefined array key 5
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 08:36:08 --> Undefined array key 5
+in APPPATH/Models/datasimpananmodel.php on line 49.
+ 1 APPPATH/Models/datasimpananmodel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'APPPATH/Models/datasimpananmodel.php', 49)
+ 2 APPPATH/Models/datasimpananmodel.php(59): App\Models\Datasimpananmodel->_get_datatables_query('tbsimpanananggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(106): App\Models\Datasimpananmodel->get_datatables('tbsimpanananggota', [...], [...], [...], [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->datasimpanan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 09:07:47 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 09:07:52 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-15 10:03:33 --> mysqli_sql_exception: Column 'status' in where clause is ambiguous in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tbpenga...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbpenga...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbpenga...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tbpenga...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/pengajuanmodel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Pengajuanpinjaman.php(33): App\Models\Pengajuanmodel->get_datatables('tbpengajuanpinj...', Array, Array, Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-15 10:03:33 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tbpengajuanpinjaman`.*, `tbanggota`.`no_anggota`, `tbanggota`.`nama`, `tbsetuppinjaman`.`nama_simpanan`, `tbsetuppinjaman`.`jangka`, `tbsetuppinjaman`.`bunga`
+FROM `tbpengajuanpinjaman`
+JOIN `tbsetuppinjaman` ON `tbsetuppinjaman`.`id` = `tbpengajuanpinjaman`.`jenis_pinjaman`
+JOIN `tbanggota` ON `tbanggota`.`id` = `tbpengajuanpinjaman`.`id_anggota`
+WHERE `status` = 0
+ORDER BY `tbpengajuanpinjaman`.`tgl_pengajuan` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbpengajuanpinjaman`.*, `tbanggota`.`no_anggota`, `tbanggota`.`nama`, `tbsetuppinjaman`.`nama_simpanan`, `tbsetuppinjaman`.`jangka`, `tbsetuppinjaman`.`bunga`
+FROM `tbpengajuanpinjaman`
+JOIN `tbsetuppinjaman` ON `tbsetuppinjaman`.`id` = `tbpengajuanpinjaman`.`jenis_pinjaman`
+JOIN `tbanggota` ON `tbanggota`.`id` = `tbpengajuanpinjaman`.`id_anggota`
+WHERE `status` = 0
+ORDER BY `tbpengajuanpinjaman`.`tgl_pengajuan` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbpengajuanpinjaman`.*, `tbanggota`.`no_anggota`, `tbanggota`.`nama`, `tbsetuppinjaman`.`nama_simpanan`, `tbsetuppinjaman`.`jangka`, `tbsetuppinjaman`.`bunga`
+FROM `tbpengajuanpinjaman`
+JOIN `tbsetuppinjaman` ON `tbsetuppinjaman`.`id` = `tbpengajuanpinjaman`.`jenis_pinjaman`
+JOIN `tbanggota` ON `tbanggota`.`id` = `tbpengajuanpinjaman`.`id_anggota`
+WHERE `status` = 0
+ORDER BY `tbpengajuanpinjaman`.`tgl_pengajuan` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tbpengajuanpinjaman`.*, `tbanggota`.`no_anggota`, `tbanggota`.`nama`, `tbsetuppinjaman`.`nama_simpanan`, `tbsetuppinjaman`.`jangka`, `tbsetuppinjaman`.`bunga`
+FROM `tbpengajuanpinjaman`
+JOIN `tbsetuppinjaman` ON `tbsetuppinjaman`.`id` = `tbpengajuanpinjaman`.`jenis_pinjaman`
+JOIN `tbanggota` ON `tbanggota`.`id` = `tbpengajuanpinjaman`.`id_anggota`
+WHERE `status` = :status:
+ORDER BY `tbpengajuanpinjaman`.`tgl_pengajuan` ASC', [...], false)
+ 5 APPPATH/Models/pengajuanmodel.php(66): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Pengajuanpinjaman.php(33): App\Models\Pengajuanmodel->get_datatables('tbpengajuanpinjaman', [...], [...], [...], [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-15 10:03:54 --> Undefined property: App\Controllers\Pengajuanpinjaman::$serversidemodel
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 49.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Pengajuanpinjaman::$serversidemodel', 'APPPATH/Controllers/Pengajuanpinjaman.php', 49)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

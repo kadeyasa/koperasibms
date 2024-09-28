@@ -1,0 +1,68 @@
+CRITICAL - 2022-12-25 07:43:01 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/pengajuanmodel.php on line 69
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/pengajuanmodel.php(69): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/pengajuanmodel.php(79): App\Models\Pengajuanmodel->_get_datatables_query('tbpengajuanpinjaman', [...], [...], [...])
+ 3 APPPATH/Controllers/Pengajuanpinjaman.php(57): App\Models\Pengajuanmodel->get_datatables('tbpengajuanpinjaman', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-25 07:49:55 --> Too few arguments to function App\Controllers\Datapinjaman::savejurnal(), 2 passed in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Datapinjaman.php on line 80 and exactly 3 expected
+in APPPATH/Controllers/Datapinjaman.php on line 104.
+ 1 APPPATH/Controllers/Datapinjaman.php(80): App\Controllers\Datapinjaman->savejurnal('01.01.120-10', Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datapinjaman->simpanpinjaman()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datapinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-25 08:23:21 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Datapinjaman.php on line 286.
+ 1 APPPATH/Controllers/Datapinjaman.php(286): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Datapinjaman.php', 286)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datapinjaman->cancelpencairan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datapinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-25 08:37:07 --> Attempt to read property "debet" on array
+in APPPATH/Controllers/Datapinjaman.php on line 290.
+ 1 APPPATH/Controllers/Datapinjaman.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "debet" on array', 'APPPATH/Controllers/Datapinjaman.php', 290)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datapinjaman->cancelpencairan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datapinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-25 08:38:02 --> Undefined variable $delete
+in APPPATH/Controllers/Datapinjaman.php on line 293.
+ 1 APPPATH/Controllers/Datapinjaman.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $delete', 'APPPATH/Controllers/Datapinjaman.php', 293)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datapinjaman->cancelpencairan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datapinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-25 08:40:33 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Datapinjaman.php on line 290.
+ 1 APPPATH/Controllers/Datapinjaman.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Datapinjaman.php', 290)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datapinjaman->cancelpencairan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datapinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-25 08:41:14 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Datapinjaman.php on line 289.
+ 1 APPPATH/Controllers/Datapinjaman.php(289): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Datapinjaman.php', 289)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datapinjaman->cancelpencairan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datapinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-25 09:01:25 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(72): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

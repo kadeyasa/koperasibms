@@ -1,0 +1,797 @@
+CRITICAL - 2022-12-17 03:57:02 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 03:58:32 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 03:58:59 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 03:59:02 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 03:59:18 --> Undefined property: App\Controllers\Pengajuanpinjaman::$setupsimpananmodel
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 58.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Pengajuanpinjaman::$setupsimpananmodel', 'APPPATH/Controllers/Pengajuanpinjaman.php', 58)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->ajukanpinjaman()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 04:00:09 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 04:37:54 --> syntax error, unexpected token "}"
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 95.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Pengajuanpinjaman.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pengajuanpinjaman')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pengajuanpinjaman')
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Pengajuanpinjaman', true)
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 05:46:38 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 06:24:00 --> Undefined variable $id
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 83.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH/Controllers/Pengajuanpinjaman.php', 83)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->ajukanpinjaman()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 06:27:01 --> Undefined property: App\Controllers\Pengajuanpinjaman::$biayamodel
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 84.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Pengajuanpinjaman::$biayamodel', 'APPPATH/Controllers/Pengajuanpinjaman.php', 84)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->ajukanpinjaman()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 06:30:12 --> syntax error, unexpected token ":", expecting "," or ";"
+in APPPATH/Views/main/tambahpengajuan.php on line 325.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tambahpengajuan', [], true)
+ 3 APPPATH/Controllers/Pengajuanpinjaman.php(90): view('main/tambahpengajuan', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->ajukanpinjaman()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 06:34:10 --> Undefined array key "jumlah?>"
+in APPPATH/Views/main/tambahpengajuan.php on line 325.
+ 1 APPPATH/Views/main/tambahpengajuan.php(325): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah?>"', 'APPPATH/Views/main/tambahpengajuan.php', 325)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tambahpengajuan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tambahpengajuan', [], true)
+ 5 APPPATH/Controllers/Pengajuanpinjaman.php(90): view('main/tambahpengajuan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->ajukanpinjaman()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 06:34:25 --> Undefined array key "jenis_pinjaman"
+in APPPATH/Views/main/tambahpengajuan.php on line 325.
+ 1 APPPATH/Views/main/tambahpengajuan.php(325): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jenis_pinjaman"', 'APPPATH/Views/main/tambahpengajuan.php', 325)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tambahpengajuan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tambahpengajuan', [], true)
+ 5 APPPATH/Controllers/Pengajuanpinjaman.php(90): view('main/tambahpengajuan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->ajukanpinjaman()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 11:47:58 --> Trying to access array offset on value of type null
+in APPPATH/Views/main/tambahpengajuan.php on line 237.
+ 1 APPPATH/Views/main/tambahpengajuan.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/main/tambahpengajuan.php', 237)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tambahpengajuan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tambahpengajuan', [], true)
+ 5 APPPATH/Controllers/Pengajuanpinjaman.php(90): view('main/tambahpengajuan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->ajukanpinjaman()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 11:49:17 --> Trying to access array offset on value of type null
+in APPPATH/Views/main/tambahpengajuan.php on line 261.
+ 1 APPPATH/Views/main/tambahpengajuan.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/main/tambahpengajuan.php', 261)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tambahpengajuan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tambahpengajuan', [], true)
+ 5 APPPATH/Controllers/Pengajuanpinjaman.php(90): view('main/tambahpengajuan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->ajukanpinjaman()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 11:49:42 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 11:49:46 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 11:50:32 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 11:50:36 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 11:51:01 --> Call to a member function getInsertID() on int
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 120.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 11:52:29 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 11:52:39 --> Call to a member function InsertID() on int
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 120.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 11:59:44 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 11:59:45 --> Attempt to read property "InsertID" on int
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 125.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "InsertID" on int', 'APPPATH/Controllers/Pengajuanpinjaman.php', 125)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:02:07 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:02:19 --> Call to a member function insert() on string
+in APPPATH/Models/anggotamodel.php on line 30.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(125): App\Models\Anggotamodel->addCalonAnggota([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:03:35 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:03:50 --> Call to a member function insert() on string
+in APPPATH/Models/anggotamodel.php on line 30.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(125): App\Models\Anggotamodel->addCalonAnggota([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:06:02 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:06:19 --> Call to a member function insert() on null
+in APPPATH/Models/anggotamodel.php on line 30.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(125): App\Models\Anggotamodel->addCalonAnggota([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:08:03 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:08:14 --> Undefined variable $table
+in APPPATH/Models/anggotamodel.php on line 30.
+ 1 APPPATH/Models/anggotamodel.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $table', 'APPPATH/Models/anggotamodel.php', 30)
+ 2 APPPATH/Controllers/Pengajuanpinjaman.php(125): App\Models\Anggotamodel->addCalonAnggota([...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:08:25 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:08:37 --> Call to a member function getinsertID() on bool
+in APPPATH/Models/anggotamodel.php on line 31.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(125): App\Models\Anggotamodel->addCalonAnggota([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:08:47 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:09:25 --> Call to a member function insertID() on bool
+in APPPATH/Models/anggotamodel.php on line 31.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(125): App\Models\Anggotamodel->addCalonAnggota([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:24:31 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:24:47 --> Call to a member function getInsertID() on bool
+in APPPATH/Models/anggotamodel.php on line 31.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(125): App\Models\Anggotamodel->addCalonAnggota([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:40:38 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:43:38 --> Undefined variable $save_pengajuan
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 152.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $save_pengajuan', 'APPPATH/Controllers/Pengajuanpinjaman.php', 152)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:46:42 --> Allowed fields must be specified for model: App\Models\Pengajuanmodel
+in SYSTEMPATH/BaseModel.php on line 1160.
+ 1 SYSTEMPATH/BaseModel.php(1160): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Pengajuanmodel')
+ 2 SYSTEMPATH/BaseModel.php(724): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Pengajuanpinjaman.php(149): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:47:42 --> Class "App\Models\pengajuannmodel" not found
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Pengajuanpinjaman->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:49:17 --> Cannot use App\Models\pengajuanmodel as pengajuanmodel because the name is already in use
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-17 12:50:00 --> Cannot use App\Models\pengajuanmodel as pengajuanmodel because the name is already in use
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-17 12:50:57 --> Allowed fields must be specified for model: App\Models\Pengajuanmodel
+in SYSTEMPATH/BaseModel.php on line 1160.
+ 1 SYSTEMPATH/BaseModel.php(1160): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Pengajuanmodel')
+ 2 SYSTEMPATH/BaseModel.php(724): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Pengajuanpinjaman.php(151): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:54:02 --> Undefined variable $save_pengajuan
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 154.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $save_pengajuan', 'APPPATH/Controllers/Pengajuanpinjaman.php', 154)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 12:56:47 --> The route for "pengajuanpinjaman?id=7" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('pengajuanpinjaman?id=7')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Pengajuanpinjaman.php(156): redirect('pengajuanpinjaman?id=7')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->savepengajuan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:34:27 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:34:31 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:37:09 --> Undefined property: App\Controllers\Pengajuanpinjaman::$pengajuanmodel
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 57.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Pengajuanpinjaman::$pengajuanmodel', 'APPPATH/Controllers/Pengajuanpinjaman.php', 57)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:37:30 --> Undefined property: App\Controllers\Pengajuanpinjaman::$pengajuanmodel
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 57.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Pengajuanpinjaman::$pengajuanmodel', 'APPPATH/Controllers/Pengajuanpinjaman.php', 57)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:37:50 --> Undefined property: App\Controllers\Pengajuanpinjaman::$pengajuanmodel
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 73.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Pengajuanpinjaman::$pengajuanmodel', 'APPPATH/Controllers/Pengajuanpinjaman.php', 73)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:39:51 --> Undefined property: stdClass::$alamat
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 67.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$alamat', 'APPPATH/Controllers/Pengajuanpinjaman.php', 67)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:40:24 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/pengajuanmodel.php on line 69
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/pengajuanmodel.php(69): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/pengajuanmodel.php(79): App\Models\Pengajuanmodel->_get_datatables_query('tbpengajuanpinjaman', [...], [...], [...])
+ 3 APPPATH/Controllers/Pengajuanpinjaman.php(57): App\Models\Pengajuanmodel->get_datatables('tbpengajuanpinjaman', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:40:26 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/pengajuanmodel.php on line 69
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/pengajuanmodel.php(69): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/pengajuanmodel.php(79): App\Models\Pengajuanmodel->_get_datatables_query('tbpengajuanpinjaman', [...], [...], [...])
+ 3 APPPATH/Controllers/Pengajuanpinjaman.php(57): App\Models\Pengajuanmodel->get_datatables('tbpengajuanpinjaman', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:40:58 --> Undefined property: stdClass::$tgl
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 66.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl', 'APPPATH/Controllers/Pengajuanpinjaman.php', 66)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:41:00 --> Undefined property: stdClass::$tgl
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 66.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl', 'APPPATH/Controllers/Pengajuanpinjaman.php', 66)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:41:00 --> Undefined property: stdClass::$tgl
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 66.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl', 'APPPATH/Controllers/Pengajuanpinjaman.php', 66)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:41:01 --> Undefined property: stdClass::$tgl
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 66.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl', 'APPPATH/Controllers/Pengajuanpinjaman.php', 66)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:43:06 --> Attempt to read property "status" on array
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 63.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status" on array', 'APPPATH/Controllers/Pengajuanpinjaman.php', 63)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:43:08 --> Attempt to read property "status" on array
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 63.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status" on array', 'APPPATH/Controllers/Pengajuanpinjaman.php', 63)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:43:09 --> Attempt to read property "status" on array
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 63.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status" on array', 'APPPATH/Controllers/Pengajuanpinjaman.php', 63)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->getDataPengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:49:15 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:49:25 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:49:28 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:49:57 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:51:55 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:52:18 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:52:25 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:52:35 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:53:01 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-17 21:01:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(50) NOT NULL,
+	`jumlah_bunga` FLOAT NOT NULL,
+	`jumlah_pokok` FLOAT NOT NULL...' at line 7 in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Database/Migrations/2022-11-30-013057_Dataangsuranpinjaman.php(54): CodeIgniter\Database\Forge->createTable('tbdataangsuranp...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MigrationRunner.php(868): App\Database\Migrations\Dataangsuranpinjaman->up()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2022-12-17 21:03:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(50) NOT NULL,
+	`debet` FLOAT NOT NULL,
+	`kredit` FLOAT NOT NULL,
+	`balance` ...' at line 7 in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Database/Migrations/2022-11-30-013057_Datamutasipinjaman.php(58): CodeIgniter\Database\Forge->createTable('tbdatamutasipin...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MigrationRunner.php(868): App\Database\Migrations\Datamutasipinjaman->up()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+CRITICAL - 2022-12-17 21:05:51 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 21:06:15 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 21:06:33 --> Undefined variable $data
+in APPPATH/Controllers/Pengajuanpinjaman.php on line 183.
+ 1 APPPATH/Controllers/Pengajuanpinjaman.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH/Controllers/Pengajuanpinjaman.php', 183)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->editstatuspengajuan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 21:06:43 --> Undefined variable $id
+in APPPATH/Views/main/tambahpengajuan.php on line 138.
+ 1 APPPATH/Views/main/tambahpengajuan.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH/Views/main/tambahpengajuan.php', 138)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tambahpengajuan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tambahpengajuan', [], true)
+ 5 APPPATH/Controllers/Pengajuanpinjaman.php(184): view('main/tambahpengajuan', [])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->editstatuspengajuan()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 21:08:35 --> Undefined variable $id
+in APPPATH/Views/main/tambahpengajuan.php on line 138.
+ 1 APPPATH/Views/main/tambahpengajuan.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH/Views/main/tambahpengajuan.php', 138)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tambahpengajuan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tambahpengajuan', [], true)
+ 5 APPPATH/Controllers/Pengajuanpinjaman.php(184): view('main/tambahpengajuan', [])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->editstatuspengajuan()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 21:08:51 --> Undefined variable $results2
+in APPPATH/Views/main/tambahpengajuan.php on line 152.
+ 1 APPPATH/Views/main/tambahpengajuan.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results2', 'APPPATH/Views/main/tambahpengajuan.php', 152)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/tambahpengajuan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/tambahpengajuan', [], true)
+ 5 APPPATH/Controllers/Pengajuanpinjaman.php(186): view('main/tambahpengajuan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->editstatuspengajuan()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 21:09:23 --> Invalid file: main/editpengajuan.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/editpengajuan.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/editpengajuan', [], true)
+ 3 APPPATH/Controllers/Pengajuanpinjaman.php(186): view('main/editpengajuan', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Pengajuanpinjaman->editstatuspengajuan()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengajuanpinjaman))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 21:25:24 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 21:36:06 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 21:36:32 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/serversidemodel.php on line 47
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 APPPATH/Models/serversidemodel.php(47): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH/Models/serversidemodel.php(57): App\Models\Serversidemodel->_get_datatables_query('tbanggota', [...], [...], [...])
+ 3 APPPATH/Controllers/Datasimpanan.php(70): App\Models\Serversidemodel->get_datatables('tbanggota', [...], [...], [...], [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Datasimpanan->dataanggota()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datasimpanan))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

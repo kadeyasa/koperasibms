@@ -1,0 +1,64 @@
+CRITICAL - 2022-12-01 23:32:09 --> Undefined property: App\Controllers\Auth::$load
+in APPPATH/Controllers/Auth.php on line 8.
+ 1 APPPATH/Controllers/Auth.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$load', 'APPPATH/Controllers/Auth.php', 8)
+ 2 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Auth->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-01 23:44:25 --> Undefined property: App\Controllers\Auth::$load
+in APPPATH/Controllers/Auth.php on line 8.
+ 1 APPPATH/Controllers/Auth.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$load', 'APPPATH/Controllers/Auth.php', 8)
+ 2 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Auth->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-01 23:44:32 --> Undefined property: App\Controllers\Auth::$load
+in APPPATH/Controllers/Auth.php on line 8.
+ 1 APPPATH/Controllers/Auth.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$load', 'APPPATH/Controllers/Auth.php', 8)
+ 2 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Auth->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-01 23:48:20 --> Undefined property: App\Controllers\Auth::$load
+in APPPATH/Controllers/Auth.php on line 8.
+ 1 APPPATH/Controllers/Auth.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$load', 'APPPATH/Controllers/Auth.php', 8)
+ 2 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Auth->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-01 23:48:39 --> Undefined property: App\Controllers\Auth::$load
+in APPPATH/Controllers/Auth.php on line 8.
+ 1 APPPATH/Controllers/Auth.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$load', 'APPPATH/Controllers/Auth.php', 8)
+ 2 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Auth->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-01 23:51:46 --> Undefined property: App\Controllers\Auth::$load
+in APPPATH/Controllers/Auth.php on line 8.
+ 1 APPPATH/Controllers/Auth.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$load', 'APPPATH/Controllers/Auth.php', 8)
+ 2 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Auth->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-01 23:52:47 --> Undefined property: App\Controllers\Auth::$load
+in APPPATH/Controllers/Auth.php on line 8.
+ 1 APPPATH/Controllers/Auth.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$load', 'APPPATH/Controllers/Auth.php', 8)
+ 2 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Auth->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-01 23:53:41 --> Undefined property: App\Controllers\Auth::$load
+in APPPATH/Controllers/Auth.php on line 8.
+ 1 APPPATH/Controllers/Auth.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$load', 'APPPATH/Controllers/Auth.php', 8)
+ 2 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Auth->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

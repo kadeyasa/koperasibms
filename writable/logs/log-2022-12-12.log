@@ -1,0 +1,363 @@
+CRITICAL - 2022-12-12 04:01:50 --> Class "App\Controllers\Simpananmodel" not found
+in APPPATH/Controllers/Setupsimpanan.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Setupsimpanan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 04:21:07 --> Call to undefined method App\Models\Setupsimpananmodel::getResult
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Setupsimpanan.php(24): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setupsimpanan->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setupsimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 04:21:30 --> Undefined property: App\Controllers\Setupsimpanan::$anggotamodel
+in APPPATH/Controllers/Setupsimpanan.php on line 26.
+ 1 APPPATH/Controllers/Setupsimpanan.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Setupsimpanan::$anggotamodel', 'APPPATH/Controllers/Setupsimpanan.php', 26)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setupsimpanan->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setupsimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 04:21:32 --> Undefined property: App\Controllers\Setupsimpanan::$anggotamodel
+in APPPATH/Controllers/Setupsimpanan.php on line 26.
+ 1 APPPATH/Controllers/Setupsimpanan.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Setupsimpanan::$anggotamodel', 'APPPATH/Controllers/Setupsimpanan.php', 26)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setupsimpanan->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setupsimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 04:22:26 --> Undefined property: App\Controllers\Setupsimpanan::$anggotamodel
+in APPPATH/Controllers/Setupsimpanan.php on line 26.
+ 1 APPPATH/Controllers/Setupsimpanan.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Setupsimpanan::$anggotamodel', 'APPPATH/Controllers/Setupsimpanan.php', 26)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setupsimpanan->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setupsimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 04:22:27 --> Undefined property: App\Controllers\Setupsimpanan::$anggotamodel
+in APPPATH/Controllers/Setupsimpanan.php on line 26.
+ 1 APPPATH/Controllers/Setupsimpanan.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Setupsimpanan::$anggotamodel', 'APPPATH/Controllers/Setupsimpanan.php', 26)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setupsimpanan->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setupsimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 06:14:20 --> Undefined variable $data
+in APPPATH/Controllers/Setupsimpanan.php on line 61.
+ 1 APPPATH/Controllers/Setupsimpanan.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH/Controllers/Setupsimpanan.php', 61)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setupsimpanan->savesetupsimpanan()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setupsimpanan))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 06:40:09 --> Undefined array key "jangka_waktu_bulan"
+in APPPATH/Views/main/setupsimpanan.php on line 210.
+ 1 APPPATH/Views/main/setupsimpanan.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jangka_waktu_bulan"', 'APPPATH/Views/main/setupsimpanan.php', 210)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/setupsimpanan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/setupsimpanan', [], true)
+ 5 APPPATH/Controllers/Setupsimpanan.php(28): view('main/setupsimpanan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setupsimpanan->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setupsimpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 06:41:24 --> Attempt to read property "id" on array
+in APPPATH/Views/main/setupsimpanan.php on line 227.
+ 1 APPPATH/Views/main/setupsimpanan.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH/Views/main/setupsimpanan.php', 227)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/setupsimpanan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/setupsimpanan', [], true)
+ 5 APPPATH/Controllers/Setupsimpanan.php(28): view('main/setupsimpanan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setupsimpanan->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setupsimpanan))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 09:09:40 --> Undefined property: App\Controllers\Setuppinjaman::$setuppinjamanmodel
+in APPPATH/Controllers/Setuppinjaman.php on line 16.
+ 1 APPPATH/Controllers/Setuppinjaman.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Setuppinjaman::$setuppinjamanmodel', 'APPPATH/Controllers/Setuppinjaman.php', 16)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-12 19:58:05 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Setuppinjaman.php(46): CodeIgniter\Model->insert(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Setuppinjaman->savesetup()
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#13 {main}
+CRITICAL - 2022-12-12 19:58:05 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tbsetuppinjaman` (`nama_simpanan`, `jangka`, `bunga`, `status`) VALUES (\'Pinjaman Mingguan 6 Kali angsuran\', \'6\', \'1\', \'1\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbsetuppinjaman` (`nama_simpanan`, `jangka`, `bunga`, `status`) VALUES (\'Pinjaman Mingguan 6 Kali angsuran\', \'6\', \'1\', \'1\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbsetuppinjaman` (`nama_simpanan`, `jangka`, `bunga`, `status`) VALUES (\'Pinjaman Mingguan 6 Kali angsuran\', \'6\', \'1\', \'1\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbsetuppinjaman` (`nama_simpanan`, `jangka`, `bunga`, `status`) VALUES (:nama_simpanan:, :jangka:, :bunga:, :status:)', [...], false)
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Setuppinjaman.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->savesetup()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-12 19:58:36 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Setuppinjaman.php(46): CodeIgniter\Model->insert(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Setuppinjaman->savesetup()
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#13 {main}
+CRITICAL - 2022-12-12 19:58:37 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tbsetuppinjaman` (`nama_simpanan`, `jangka`, `bunga`, `status`) VALUES (\'Pinjaman Mingguan 6 Kali angsuran\', \'6\', \'1\', \'1\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbsetuppinjaman` (`nama_simpanan`, `jangka`, `bunga`, `status`) VALUES (\'Pinjaman Mingguan 6 Kali angsuran\', \'6\', \'1\', \'1\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbsetuppinjaman` (`nama_simpanan`, `jangka`, `bunga`, `status`) VALUES (\'Pinjaman Mingguan 6 Kali angsuran\', \'6\', \'1\', \'1\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbsetuppinjaman` (`nama_simpanan`, `jangka`, `bunga`, `status`) VALUES (:nama_simpanan:, :jangka:, :bunga:, :status:)', [...], false)
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Setuppinjaman.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->savesetup()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 20:04:20 --> Undefined variable $jenis
+in APPPATH/Views/main/setuppinjaman.php on line 227.
+ 1 APPPATH/Views/main/setuppinjaman.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenis', 'APPPATH/Views/main/setuppinjaman.php', 227)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/setuppinjaman.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/setuppinjaman', [], true)
+ 5 APPPATH/Controllers/Setuppinjaman.php(20): view('main/setuppinjaman', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 20:20:05 --> Undefined variable $jenis
+in APPPATH/Views/main/setuppinjaman.php on line 227.
+ 1 APPPATH/Views/main/setuppinjaman.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenis', 'APPPATH/Views/main/setuppinjaman.php', 227)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/setuppinjaman.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/setuppinjaman', [], true)
+ 5 APPPATH/Controllers/Setuppinjaman.php(20): view('main/setuppinjaman', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-12 22:55:44 --> mysqli_sql_exception: Unknown column 'b.nama_pinjaman' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/biayapinjamanmodel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Setuppinjaman.php(117): App\Models\Biayapinjamanmodel->getData()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Setuppinjaman->settingbiaya()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-12 22:55:44 --> Unknown column 'b.nama_pinjaman' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `b`.`nama_pinjaman`
+FROM `tbbiayapinjaman` `a`
+JOIN `tbsetuppinjaman` `b` ON `b`.`jenis_pinjaman`=`a`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `b`.`nama_pinjaman`
+FROM `tbbiayapinjaman` `a`
+JOIN `tbsetuppinjaman` `b` ON `b`.`jenis_pinjaman`=`a`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `b`.`nama_pinjaman`
+FROM `tbbiayapinjaman` `a`
+JOIN `tbsetuppinjaman` `b` ON `b`.`jenis_pinjaman`=`a`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`nama_pinjaman`
+FROM `tbbiayapinjaman` `a`
+JOIN `tbsetuppinjaman` `b` ON `b`.`jenis_pinjaman`=`a`.`id`', [], false)
+ 5 APPPATH/Models/biayapinjamanmodel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Setuppinjaman.php(117): App\Models\Biayapinjamanmodel->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->settingbiaya()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 23:04:56 --> Undefined property: mysqli::$id
+in APPPATH/Views/main/biayapinjaman.php on line 205.
+ 1 APPPATH/Views/main/biayapinjaman.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$id', 'APPPATH/Views/main/biayapinjaman.php', 205)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/biayapinjaman.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/biayapinjaman', [], true)
+ 5 APPPATH/Controllers/Setuppinjaman.php(123): view('main/biayapinjaman', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->settingbiaya()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 23:06:56 --> Cannot use object of type stdClass as array
+in APPPATH/Views/main/biayapinjaman.php on line 314.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/biayapinjaman', [], true)
+ 4 APPPATH/Controllers/Setuppinjaman.php(124): view('main/biayapinjaman', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->settingbiaya()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 23:07:16 --> Cannot use object of type stdClass as array
+in APPPATH/Views/main/biayapinjaman.php on line 314.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/biayapinjaman', [], true)
+ 4 APPPATH/Controllers/Setuppinjaman.php(124): view('main/biayapinjaman', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->settingbiaya()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 23:07:49 --> syntax error, unexpected token "->"
+in APPPATH/Models/biayapinjamanmodel.php on line 30.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/biayapinjamanmodel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\biayapinjamanmodel')
+ 3 APPPATH/Controllers/Setuppinjaman.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\biayapinjamanmodel')
+ 4 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Setuppinjaman->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-12 23:08:02 --> mysqli_sql_exception: Unknown column 'b.id_pinjaman' in 'on clause' in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Models/biayapinjamanmodel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Setuppinjaman.php(117): App\Models\Biayapinjamanmodel->getData()
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Setuppinjaman->settingbiaya()
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2022-12-12 23:08:02 --> Unknown column 'b.id_pinjaman' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `b`.`nama_simpanan`
+FROM `tbbiayapinjaman` `a`
+JOIN `tbsetuppinjaman` `b` ON `b`.`id_pinjaman`=`a`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `b`.`nama_simpanan`
+FROM `tbbiayapinjaman` `a`
+JOIN `tbsetuppinjaman` `b` ON `b`.`id_pinjaman`=`a`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `b`.`nama_simpanan`
+FROM `tbbiayapinjaman` `a`
+JOIN `tbsetuppinjaman` `b` ON `b`.`id_pinjaman`=`a`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`nama_simpanan`
+FROM `tbbiayapinjaman` `a`
+JOIN `tbsetuppinjaman` `b` ON `b`.`id_pinjaman`=`a`.`id`', [], false)
+ 5 APPPATH/Models/biayapinjamanmodel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Setuppinjaman.php(117): App\Models\Biayapinjamanmodel->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->settingbiaya()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 23:08:35 --> Cannot use object of type stdClass as array
+in APPPATH/Views/main/biayapinjaman.php on line 314.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/biayapinjaman', [], true)
+ 4 APPPATH/Controllers/Setuppinjaman.php(124): view('main/biayapinjaman', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->settingbiaya()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 23:13:46 --> Cannot use object of type stdClass as array
+in APPPATH/Views/main/biayapinjaman.php on line 237.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/biayapinjaman', [], true)
+ 4 APPPATH/Controllers/Setuppinjaman.php(124): view('main/biayapinjaman', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->settingbiaya()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 23:19:50 --> Undefined variable $result2
+in APPPATH/Views/main/biayapinjaman.php on line 354.
+ 1 APPPATH/Views/main/biayapinjaman.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result2', 'APPPATH/Views/main/biayapinjaman.php', 354)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/main/biayapinjaman.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/biayapinjaman', [], true)
+ 5 APPPATH/Controllers/Setuppinjaman.php(124): view('main/biayapinjaman', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->settingbiaya()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-12 23:19:57 --> Cannot use object of type stdClass as array
+in APPPATH/Views/main/biayapinjaman.php on line 355.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('main/biayapinjaman', [], true)
+ 4 APPPATH/Controllers/Setuppinjaman.php(124): view('main/biayapinjaman', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->settingbiaya()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-12 23:20:33 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/app/Controllers/Setuppinjaman.php(152): CodeIgniter\Model->insert(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(927): App\Controllers\Setuppinjaman->savebiayapinjaman()
+#9 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+#10 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/koperasiv1/system/Commands/Server/rewrite.php(46): require_once('/Applications/X...')
+#13 {main}
+CRITICAL - 2022-12-12 23:20:33 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tbbiayapinjaman` (`nama_biaya`, `jenis_biaya`, `jumlah`, `id_pinjaman`, `status`) VALUES (\'Biaya Materai\', \'2\', \'25000\', \'7\', \'1\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbbiayapinjaman` (`nama_biaya`, `jenis_biaya`, `jumlah`, `id_pinjaman`, `status`) VALUES (\'Biaya Materai\', \'2\', \'25000\', \'7\', \'1\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbbiayapinjaman` (`nama_biaya`, `jenis_biaya`, `jumlah`, `id_pinjaman`, `status`) VALUES (\'Biaya Materai\', \'2\', \'25000\', \'7\', \'1\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbbiayapinjaman` (`nama_biaya`, `jenis_biaya`, `jumlah`, `id_pinjaman`, `status`) VALUES (:nama_biaya:, :jenis_biaya:, :jumlah:, :id_pinjaman:, :status:)', [...], false)
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Setuppinjaman.php(152): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setuppinjaman->savebiayapinjaman()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setuppinjaman))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
