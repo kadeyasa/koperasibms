@@ -425,7 +425,7 @@
 				let query = $(this).val();
 				if (query.length > 2) {
 					$.ajax({
-						url: 'controller_name/carianggotawajib', // Replace with the actual controller URL
+						url: 'carianggotawajib', // Replace with the actual controller URL
 						method: 'GET',
 						data: { search: query },
 						dataType: 'json', // Make sure dataType is set to 'json'
