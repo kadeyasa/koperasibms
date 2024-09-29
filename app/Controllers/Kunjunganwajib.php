@@ -8,6 +8,7 @@ use App\Models\Akunmodel;
 use App\Models\Jurnalmodel;
 use App\Models\Tagihanmodel;
 use App\Models\Kunjunganwajibmodel;
+use App\Models\Anggotamodel;
 
 class Kunjunganwajib extends BaseController
 {
@@ -53,9 +54,9 @@ class Kunjunganwajib extends BaseController
     }
 
     function carianggota(){
-        $model = new Kunjunganwajibmodel();
+        $model = new Anggotamodel();
         $keyword = $this->request->getGet('search');
-        
+
         if (isset($keyword) && !empty($keyword)) {
             $result = $model->where('no_anggota', $keyword)->first();
             return $this->response->setJSON($result);
