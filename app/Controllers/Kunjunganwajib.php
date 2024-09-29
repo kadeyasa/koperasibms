@@ -63,4 +63,50 @@ class Kunjunganwajib extends BaseController
         }
         return $this->response->setJSON([]);
     }
+
+    public function addkunjungan()
+    {
+        $model = new Kunjunganwajibmodel();
+
+        // Validation rules
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'nonasabah' => 'required',
+            'kolektor' => 'required',
+            'date' => 'required'
+        ]);
+
+        // Check validation
+        if (!$this->validate($validation->getRules())) {
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => $validation->getErrors()
+            ]);
+        }
+
+        // Collect data
+        $nonasabah = $this->request->getPost('nonasabah');
+        $kolektor = $this->request->getPost('kolektor');
+        $date = $this->request->getPost('date');
+
+        $datakunjungan = [
+            'id_nasabah' => $nonasabah,
+            'kolektor' => $kolektor,
+            'followup_date' => $date
+        ];
+
+        if ($model->insert($datakunjungan)) {
+            return $this->response->setJSON([
+                'status' => 'success',
+                'message' => 'Kunjungan added successfully'
+            ]);
+        } else {
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => 'Failed to add kunjungan'
+            ]);
+        }
+    }
+
+
 }

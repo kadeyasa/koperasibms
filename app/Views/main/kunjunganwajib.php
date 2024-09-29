@@ -394,6 +394,21 @@
 									<input type="text" class="form-control form-control-solid" placeholder="followupdate" name="followupdate" value=""  id="followupdate"/>
 									<!--end::Input-->
 								</div>
+								<div class="fv-row mb-7">
+									<!--begin::Label-->
+									<label class="required fs-6 fw-semibold mb-2">Kolektor</label>
+									<!--end::Label-->
+									<!--begin::Input-->
+									<!--begin::Select2-->
+									<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Pilih Kolektor" data-kt-ecommerce-order-filter="status" name="kolektordata" id="kolektordata">
+										<option></option>
+										<?php foreach($kolektors as $row_kolektor){?>
+											<option value="<?php echo $row_kolektor['username'];?>"><?php echo $row_kolektor['username'];?></option>
+										<?php }?>
+									</select>
+									<!--end::Select2-->
+									<!--end::Input-->
+								</div>
 							</div>
 							<!--end::Scroll-->
 						</div>
@@ -405,10 +420,9 @@
 							<button type="reset" id="kt_modal_add_customer_cancel" class="btn btn-light me-3">Discard</button>
 							<!--end::Button-->
 							<!--begin::Button-->
-							<button type="submit" id="kt_modal_add_customer_submit" class="btn btn-primary">
+							<button type="submit" id="simpankunjunganwajib" class="btn btn-primary">
 								<span class="indicator-label">Submit</span>
-								<span class="indicator-progress">Please wait...
-								<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+								
 							</button>
 							<!--end::Button-->
 						</div>
@@ -454,6 +468,50 @@
 					$('#alamat').val('');
 				}
 			});
+			$('#simpankunjunganwajib').click(function(){
+			// Disable the button to prevent multiple submissions
+			$('#simpankunjunganwajib').prop('disabled', true);
+
+			// Collect form data
+			var kolektor = $('#kolektordata').val();
+			var nonasabah = $('#nonasabah').val();
+			var followupDate = $('#followupdate').val();
+
+			// Check if any fields are empty
+			if (kolektor === '' || nonasabah === '' || followupDate === '') {
+				alert('Data tidak lengkap');
+				$('#simpankunjunganwajib').prop('disabled', false); // Re-enable the button
+			} else {
+				// Perform the AJAX request
+				$.ajax({
+					url: 'tambahkunjunganwajib', // Replace with the correct URL to your controller's method
+					method: 'POST',
+					data: {
+						kolektor: kolektor,
+						nonasabah: nonasabah,
+						date: followupDate
+					},
+					dataType: 'json', // Expect a JSON response from the server
+					success: function(response) {
+						if (response.status === 'success') {
+							alert(response.message); // Display success message
+							// You may want to clear the form fields or perform other actions here
+							$('#kolektordata').val('');
+							$('#nonasabah').val('');
+							$('#followupdate').val('');
+						} else {
+							alert('Error: ' + response.message); // Display error message
+						}
+						$('#simpankunjunganwajib').prop('disabled', false); // Re-enable the button
+					},
+					error: function(xhr, status, error) {
+						alert('An error occurred: ' + error); // Display AJAX error
+						$('#simpankunjunganwajib').prop('disabled', false); // Re-enable the button
+					}
+				});
+			}
+		});
+
 		</script>
 
 </html>
