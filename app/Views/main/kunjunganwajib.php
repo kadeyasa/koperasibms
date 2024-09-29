@@ -254,8 +254,14 @@
 																			<tbody class="fw-semibold text-gray-600">
 																				<?php
 																					foreach($results as $row){
+																						if($row->status==0){
+																							$status= 'Pending';
+																						}else{
+																							$status = 'Sudah di Followup';
+																						}
 																						?>
 																						<tr>
+																							<td>#</td>
 																							<td><?php echo $row->no_anggota;?></td>
 																							<td><?php echo $row->nama;?></td>
 																							<td><?php echo $row->alamat;?></td>
