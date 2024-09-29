@@ -31,7 +31,7 @@ class Kunjunganwajib extends BaseController
         }else{
             $end = date('Y-m-d 23:59:59');
         }
-        if(isset($_GET['kolektor'])){
+        if(isset($_GET['kolektor']) && $_GET['kelektor']!=''){
             $kolektor = $_GET['kolektor'];
             $results = $model->getRestData($kolektor,$start,$end);
         }else{

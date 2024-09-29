@@ -38,6 +38,7 @@ class Kunjunganwajibmodel extends Model
         }else{
             $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.kolektor='$kolektor' AND a.follwup_date>='$start' AND a.follwup_date<='$end'";
         }
+        echo $sql;
         $query = $this->db->query($sql);
         $row = $query->getResult();
         return $row;
