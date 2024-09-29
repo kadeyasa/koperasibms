@@ -208,7 +208,60 @@
 										<!--end::Col-->
 									</div>
 									<!--end::Row-->
-                                    <!-- informasi jumlah tagihan selama satu bulan -->
+                                    <!-- informasi Follow up nasabah -->
+                                    <div class="row">
+                                    	<div class="col-xxl-12 mb-5 mb-xl-10">
+                                    		<div class="card card-flush h-xl-100">
+                                    			<!--begin::Header-->
+												<div class="card-header pt-5">
+													<!--begin::Title-->
+													<h3 class="card-title align-items-start flex-column">
+														<span class="card-label fw-bold text-gray-800">Follow up Nasabah</span>
+														<span class="text-gray-400 mt-1 fw-semibold fs-6">&nbsp;</span>
+													</h3>
+													<!--end::Title-->
+												</div>
+												<!--end::Header-->
+                                                <div class="card-body pt-5">
+                                                	<p>Follow up Nasabah berikut ini</p>
+													<table class="table align-middle table-row-dashed fs-6 gy-5">
+														<thead>
+															<tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+																<th class="min-w-125px">No Anggota</th>
+																<th class="min-w-125px">Nama</th>
+																<th class="min-w-125px">Alamat</th>
+																<th class="min-w-125px">Followup Date</th>
+																<th class="min-w-125px">Status</th>
+																<th class="min-w-125px">Action</th>
+															</tr>
+														</thead>
+														<tbody>
+															<?php
+																foreach($pengajuan_results as $row){
+																	if($row->status==0){
+																		$status = 'Pending';
+																	}else{
+																		$status='Sudah di Followup '.$row->keterangan;
+																	}
+																	?>
+																	<tr>
+																		<td><?php echo $row->id_nasabah;?></td>
+																		<td><?php echo $row->nama;?></td>
+																		<td><?php echo $row->alamat;?></td>
+																		<td><?php echo $row->followup_date;?></td>
+																		<td><?php echo $status;?></td>
+																		<td><a href="tanganiwajib?id=<?php echo $row->id_nasabah;?>">Details</a></td>
+																	</tr>
+																	<?php
+																}
+															?>
+														</tbody>
+													</table>
+                                                </div>
+                                            </div>
+                                    	</div>
+                                    </div>
+									<!-- informasi jumlah tagihan selama satu bulan -->
                                     <div class="row">
                                     	<div class="col-xxl-12 mb-5 mb-xl-10">
                                     		<div class="card card-flush h-xl-100">

@@ -269,7 +269,7 @@
 																							<td><?php echo $row->keterangan;?></td>
 																							<td><?php echo $row->photo;?></td>
 																							<td><?php echo $row->follwup_date;?></td>
-																							
+																							<td><?php echo $row->status;?></td>
 																						</tr>
 																						<?php
 																					} 

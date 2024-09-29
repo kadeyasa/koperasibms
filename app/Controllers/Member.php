@@ -7,6 +7,7 @@ use App\Models\Pengajuanmodel;
 use App\Models\Modulemodel;
 use App\Models\Usermodulemodel;
 use App\Models\Usermodel;
+use App\Models\Kunjunganwajibmodel;
 class Member extends BaseController
 {
     public function index()
@@ -17,23 +18,28 @@ class Member extends BaseController
         if(session('userlevel')==2 || session('userlevel')==7){
             $absensi = new Absensimodel();
             $pengajuan = new Pengajuanmodel();
+            $model = new Kunjunganwajibmodel();
             $now = date("Y-m-d");
             //check status absensi hari ini 
             $row = $absensi->where('id_karyawan',session()->get('user_id'))->orderby('id','DESC')->first();
             $datapengajuan = $pengajuan->where('user',session('username'))->where('status',0)->orderby('id','DESC')->findAll();
+            $_date = date('Y-m-d');
+            $pengajuan_results = $model->getRestData(session('username'),$_date,$_date);
             if($row){
                 if($row['created_at']>=date('Y-m-d')){
                     
                     $data = array(
                         'absen'=>$row,
                         'datapengajuan'=>$datapengajuan,
-                        'absensimodel'=>$absensi
+                        'absensimodel'=>$absensi,
+                        'pengajuan_results'=>$pengajuan_results
                     );
                 }else{
                     $data = array(
                         'absen'=>0,
                         'datapengajuan'=>$datapengajuan,
-                        'absensimodel'=>$absensi
+                        'absensimodel'=>$absensi,
+                        'pengajuan_results'=>$pengajuan_results
                     );
                 }
                 
@@ -41,7 +47,8 @@ class Member extends BaseController
                 $data = array(
                     'absen'=>0,
                     'datapengajuan'=>$datapengajuan,
-                    'absensimodel'=>$absensi
+                    'absensimodel'=>$absensi,
+                    'pengajuan_results'=>$pengajuan_results
                 );
             }
             return view('main/dashboard-kolektor',$data);
