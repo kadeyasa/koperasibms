@@ -425,20 +425,28 @@
 				let query = $(this).val();
 				if (query.length > 2) {
 					$.ajax({
-						url: 'carianggotawajib', // Replace with your server URL
+						url: 'controller_name/carianggotawajib', // Replace with the actual controller URL
 						method: 'GET',
 						data: { search: query },
+						dataType: 'json', // Make sure dataType is set to 'json'
 						success: function (data) {
-							$.each(data, function (index, item) {
-								$('#nama').val(item.nama);
-								$('#alamat').val(item.alamat);
-							});
+							if (data.length > 0) {
+								$('#nama').val(data[0].nama);
+								$('#alamat').val(data[0].alamat);
+							} else {
+								$('#nama').val('');
+								$('#alamat').val('');
+							}
 						},
 						error: function (xhr, status, error) {
 							console.error('Error:', error);
 						}
 					});
+				} else {
+					$('#nama').val('');
+					$('#alamat').val('');
 				}
-			});															
+			});
 		</script>
+
 </html>
