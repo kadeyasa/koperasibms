@@ -386,6 +386,14 @@
 									<input type="text" class="form-control form-control-solid" placeholder="Nama" name="alamat" value=""  id="alamat" readonly/>
 									<!--end::Input-->
 								</div>
+								<div class="fv-row mb-7">
+									<!--begin::Label-->
+									<label class="required fs-6 fw-semibold mb-2">Followup date</label>
+									<!--end::Label-->
+									<!--begin::Input-->
+									<input type="text" class="form-control form-control-solid" placeholder="followupdate" name="followupdate" value=""  id="followupdate"/>
+									<!--end::Input-->
+								</div>
 							</div>
 							<!--end::Scroll-->
 						</div>
@@ -417,10 +425,13 @@
 		<script src="assets/plugins/global/plugins.bundle.js"></script>
 		<script src="assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
-		<!--begin::Vendors Javascript(used for this page only)-->
-		<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-		<script src="assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script>
+		<!--begin::Custom Javascript(used for this page only)-->
+		<script src="assets/js/custom/apps/ecommerce/sales/save-order.js"></script>
+		<script src="assets/js/custom/utilities/modals/users-search.js"></script>
+        <script src="assets/js/custom/apps/ecommerce/customers/listing/add-setupbiaya.js"></script>
+        <script src="assets/js/custom/apps/ecommerce/customers/listing/listing-setupbiaya.js"></script>
 		<script type="text/javascript">
+			$("#followupdate").flatpickr({ altInput: !0, altFormat: "d F, Y", dateFormat: "Y-m-d" });
 			$('#nonasabah').on('keyup', function (){
 				let query = $(this).val();
 				if (query.length > 2) {
