@@ -96,10 +96,7 @@ class Kunjunganwajib extends BaseController
         ];
 
         if ($model->insert($datakunjungan)) {
-            return $this->response->setJSON([
-                'status' => 'success',
-                'message' => 'Kunjungan added successfully'
-            ]);
+            return redirect('kunjunganwajib');
         } else {
             return $this->response->setJSON([
                 'status' => 'error',

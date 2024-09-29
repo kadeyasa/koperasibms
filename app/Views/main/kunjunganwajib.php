@@ -336,7 +336,7 @@
 				<!--begin::Modal content-->
 				<div class="modal-content">
 					<!--begin::Form-->
-					<form class="form" action="<?php echo site_url('savependapatan');?>" id="kt_modal_add_customer_form" data-kt-redirect="<?php echo site_url('anggota');?>">
+					<form class="form" action="<?php echo site_url('tambahkunjunganwajib');?>" id="kt_modal_add_customer_form" data-kt-redirect="<?php echo site_url('anggota');?>">
 						<!--begin::Modal header-->
 						<div class="modal-header" id="kt_modal_add_customer_header">
 							<!--begin::Modal title-->
@@ -420,7 +420,7 @@
 							<button type="reset" id="kt_modal_add_customer_cancel" class="btn btn-light me-3">Discard</button>
 							<!--end::Button-->
 							<!--begin::Button-->
-							<button type="submit" id="simpankunjunganwajib" class="btn btn-primary">
+							<button type="submit" class="btn btn-primary">
 								<span class="indicator-label">Submit</span>
 								
 							</button>
