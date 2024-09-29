@@ -400,7 +400,7 @@
 									<!--end::Label-->
 									<!--begin::Input-->
 									<!--begin::Select2-->
-									<select data-placeholder="Pilih Kolektor"  name="kolektordata" id="kolektordata">
+									<select data-placeholder="Pilih Kolektor"  name="kolektordata" id="kolektordata" class="form-control">
 										<option></option>
 										<?php foreach($kolektors as $row_kolektor){?>
 											<option value="<?php echo $row_kolektor['username'];?>"><?php echo $row_kolektor['username'];?></option>
