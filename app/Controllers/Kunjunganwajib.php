@@ -19,10 +19,31 @@ class Kunjunganwajib extends BaseController
     }
 
     function index(){
-    
+        $model = new Kunjunganwajibmodel();
+        if(isset($_GET['start'])){
+            $start = $_GET['start'];
+        }else{
+            $start = date('Y-m-d 00:00:00');
+        }
+        if(isset($_GET['end'])){
+            $end = $_GET['end'];
+        }else{
+            $end = date('Y-m-d 23:59:59');
+        }
+        if(isset($_GET['kolektor'])){
+            $kolektor = $_GET['kolektor'];
+            $results = $model->from('tbkunjunganwajib a')
+                        ->join('tbanggota b','b.id=a.id_nasabah')
+                        ->where('a.kolektor',$kolektor)->where('a.created_at >=',$start)->where('a.created_at <=',$start)->findAll();
+        }else{
+            $results = $model->from('tbkunjunganwajib a')
+                        ->join('tbanggota b','b.id=a.id_nasabah')
+                        ->where('a.created_at >=',$start)
+                        ->where('a.created_at <=',$start)->findAll();
+        }
     	$data = array(
         	'kolektors'=>$this->usermodel->where('userlevel',2)->findAll(),
-        	
+            'results'=>$results	
         );
     	if(session('userlevel')!=0){
             return view('main/kunjunganwajib',$data);
