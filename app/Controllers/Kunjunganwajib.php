@@ -92,7 +92,7 @@ class Kunjunganwajib extends BaseController
         $datakunjungan = [
             'id_nasabah' => $nonasabah,
             'kolektor' => $kolektor,
-            'followup_date' => $date
+            'follwup_date' => $date
         ];
 
         if ($model->insert($datakunjungan)) {

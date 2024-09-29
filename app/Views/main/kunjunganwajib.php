@@ -391,7 +391,7 @@
 									<label class="required fs-6 fw-semibold mb-2">Followup date</label>
 									<!--end::Label-->
 									<!--begin::Input-->
-									<input type="text" class="form-control form-control-solid" placeholder="followupdate" name="followupdate" value=""  id="followupdate"/>
+									<input type="text" class="form-control form-control-solid" placeholder="followupdate" name="followupdate" id="followupdate"/>
 									<!--end::Input-->
 								</div>
 								<div class="fv-row mb-7">
@@ -445,7 +445,7 @@
         <script src="assets/js/custom/apps/ecommerce/customers/listing/add-setupbiaya.js"></script>
         <script src="assets/js/custom/apps/ecommerce/customers/listing/listing-setupbiaya.js"></script>
 		<script type="text/javascript">
-			$("#followupdate").flatpickr({ altInput: !0, altFormat: "d F, Y", dateFormat: "Y-m-d" });
+			$("#followupdate").flatpickr({ altInput: !0, altFormat: "Y-m-d", dateFormat: "Y-m-d" });
 			$('#nonasabah').on('keyup', function (){
 				let query = $(this).val();
 				if (query.length > 2) {
