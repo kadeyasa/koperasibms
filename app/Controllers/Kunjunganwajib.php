@@ -101,5 +101,20 @@ class Kunjunganwajib extends BaseController
         }
     }
 
-
+    function tangani(){
+        $model = new Kunjunganwajibmodel();
+        $id = $this->request->getGet('id');
+        $row = $model->getDataById($id);
+        
+        if($row){
+            //check data pinjaman
+            $pinjamanmodel = new Datapinjamanmodel();
+            $rowpinjaman = $pinjamanmodel->where('id_anggota',$row->id_nasabah)->orderby('id','DESC')->first();
+            $data = array(
+                'row'=>$row,
+                'rowpinjaman'=>$rowpinjaman
+            );
+            return view('main/tambah-kunjungan',$data);
+        }
+    }
 }
