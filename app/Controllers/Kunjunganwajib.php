@@ -33,11 +33,11 @@ class Kunjunganwajib extends BaseController
         }
         if(isset($_GET['kolektor'])){
             $kolektor = $_GET['kolektor'];
-            $results = $model->from('tbkunjunganwajibd a')
+            $results = $model->from('tbkunjunganwajib a')
                         ->join('tbanggota b','b.no_anggota=a.id_nasabah')
                         ->where('a.kolektor',$kolektor)->where('a.created_at >=',$start)->where('a.created_at <=',$start)->findAll();
         }else{
-            $results = $model->from('tbkunjunganwajibd a')
+            $results = $model->from('tbkunjunganwajib a')
                         ->join('tbanggota b','b.no_anggota=a.id_nasabah')
                         ->where('a.created_at >=',$start)
                         ->where('a.created_at <=',$start)->findAll();
