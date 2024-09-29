@@ -400,7 +400,7 @@
 									<!--end::Label-->
 									<!--begin::Input-->
 									<!--begin::Select2-->
-									<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Pilih Kolektor" data-kt-ecommerce-order-filter="status" name="kolektordata" id="kolektordata">
+									<select data-placeholder="Pilih Kolektor"  name="kolektordata" id="kolektordata">
 										<option></option>
 										<?php foreach($kolektors as $row_kolektor){?>
 											<option value="<?php echo $row_kolektor['username'];?>"><?php echo $row_kolektor['username'];?></option>
