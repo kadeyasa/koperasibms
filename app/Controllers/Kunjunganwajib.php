@@ -35,7 +35,7 @@ class Kunjunganwajib extends BaseController
             $kolektor = $_GET['kolektor'];
             $results = $model->getRestData($kolektor,$start,$end);
         }else{
-           $results = $model->getRestData('all',$start,$end)
+           $results = $model->getRestData('all',$start,$end);
         }
     	$data = array(
         	'kolektors'=>$this->usermodel->where('userlevel',2)->findAll(),
