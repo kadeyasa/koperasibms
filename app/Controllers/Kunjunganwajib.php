@@ -35,12 +35,12 @@ class Kunjunganwajib extends BaseController
             $kolektor = $_GET['kolektor'];
             $results = $model->from('tbkunjunganwajib a')
                         ->join('tbanggota b','b.no_anggota=a.id_nasabah')
-                        ->where('a.kolektor',$kolektor)->where('a.created_at >=',$start)->where('a.created_at <=',$start)->findAll();
+                        ->where('a.kolektor',$kolektor)->where('a.follwup_date >=',$start)->where('a.follwup_date <=',$end)->findAll();
         }else{
             $results = $model->from('tbkunjunganwajib a')
                         ->join('tbanggota b','b.no_anggota=a.id_nasabah')
-                        ->where('a.created_at >=',$start)
-                        ->where('a.created_at <=',$start)->findAll();
+                        ->where('a.follwup_date >=',$start)
+                        ->where('a.follwup_date <=',$end)->findAll();
         }
     	$data = array(
         	'kolektors'=>$this->usermodel->where('userlevel',2)->findAll(),
