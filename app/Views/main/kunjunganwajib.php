@@ -430,14 +430,9 @@
 						data: { search: query },
 						dataType: 'json', // Make sure dataType is set to 'json'
 						success: function (data) {
-							alert(data.nama);
-							if (data.length > 0) {
-								$('#nama').val(data.nama);
-								$('#alamat').val(data.alamat);
-							} else {
-								$('#nama').val('');
-								$('#alamat').val('');
-							}
+							//alert(data.nama);
+							$('#nama').val(data.nama);
+							$('#alamat').val(data.alamat);
 						},
 						error: function (xhr, status, error) {
 							console.error('Error:', error);
