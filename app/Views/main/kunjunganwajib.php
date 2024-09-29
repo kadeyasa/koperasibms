@@ -336,7 +336,7 @@
 				<!--begin::Modal content-->
 				<div class="modal-content">
 					<!--begin::Form-->
-					<form class="form" action="<?php echo site_url('tambahkunjunganwajib');?>" id="kt_modal_add_customer_form" data-kt-redirect="<?php echo site_url('anggota');?>">
+					<form class="form" method="post" action="<?php echo site_url('tambahkunjunganwajib');?>" id="kt_modal_add_customer_form" data-kt-redirect="<?php echo site_url('anggota');?>">
 						<!--begin::Modal header-->
 						<div class="modal-header" id="kt_modal_add_customer_header">
 							<!--begin::Modal title-->
