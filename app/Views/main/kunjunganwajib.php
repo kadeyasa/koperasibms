@@ -430,10 +430,10 @@
 						data: { search: query },
 						dataType: 'json', // Make sure dataType is set to 'json'
 						success: function (data) {
-							alert(data[0]);
+							alert(data.nama);
 							if (data.length > 0) {
-								$('#nama').val(data[0].nama);
-								$('#alamat').val(data[0].alamat);
+								$('#nama').val(data.nama);
+								$('#alamat').val(data.alamat);
 							} else {
 								$('#nama').val('');
 								$('#alamat').val('');
