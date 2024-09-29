@@ -72,8 +72,8 @@ class Kunjunganwajib extends BaseController
         $validation = \Config\Services::validation();
         $validation->setRules([
             'nonasabah' => 'required',
-            'kolektor' => 'required',
-            'date' => 'required'
+            'kolektordata' => 'required',
+            'followupdate' => 'required'
         ]);
 
         // Check validation
@@ -86,8 +86,8 @@ class Kunjunganwajib extends BaseController
 
         // Collect data
         $nonasabah = $this->request->getPost('nonasabah');
-        $kolektor = $this->request->getPost('kolektor');
-        $date = $this->request->getPost('date');
+        $kolektor = $this->request->getPost('kolektordata');
+        $date = $this->request->getPost('followupdate');
 
         $datakunjungan = [
             'id_nasabah' => $nonasabah,
