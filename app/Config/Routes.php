@@ -188,6 +188,7 @@ $routes->post('/simpankasharian', 'Laporan::simpankasharian',['filter' => 'auth'
 
 //module kunjungawajib
 $routes->get('/kunjunganwajib', 'Kunjunganwajib::index',['filter' => 'auth']);
+$routes->get('/carianggotawajib', 'Kunjunganwajib::carianggota',['filter' => 'auth']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

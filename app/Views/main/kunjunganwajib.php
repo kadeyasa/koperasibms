@@ -147,12 +147,13 @@
 																	<?php echo form_open('kunjunganwajib',array('method'=>'get'));?>
                                                                     <div class="card-toolbar">
                                                                         <!--begin::Toolbar-->
+																		<!--begin::Add customer-->
+																		<div class="d-flex align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Specify invoice date">
+																			<a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#kt_modal_add_customer">Tambah</a>&nbsp;&nbsp;
+																		</div>
+																		<!--end::Add customer-->
                                                                         <div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
-																			<!--begin::Add customer-->
-																			<div class="d-flex align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Specify invoice date">
-																				<a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#kt_modal_add_customer">Tambah</a>&nbsp;&nbsp;
-                                                                        	</div>
-                                                                            <!--end::Add customer-->
+																			
                                                                             <!--begin::Filter-->
                                                                             <div class="w-150px me-3">
                                                                                 <!--begin::Select2-->
@@ -363,39 +364,26 @@
 								<!--begin::Input group-->
 								<div class="fv-row mb-7">
 									<!--begin::Label-->
-									<label class="required fs-6 fw-semibold mb-2">Jenis Pendapatan</label>
+									<label class="required fs-6 fw-semibold mb-2">NO Nasabah</label>
 									<!--end::Label-->
 									<!--begin::Input-->
-									<select class="form-select form-select-solid" data-control="select2" data-hide-search="false" data-placeholder="Pilih Jenis Pendapatan" data-kt-ecommerce-order-filter="status" name="jenis_pendapatan" id="jenis_pendapatan">
-										<option value="02.01.210-100">Biaya Materai</option>
-										<option value="02.01.210-90">Pendapatan Denda</option>
-										<option value="02.01.210-110">Pendapatan Lain-lain</option>
-									</select>
-									<!--end::Input-->
-								</div>
-								<!--end::Input group-->
-								<div class="fv-row mb-7">
-									<!--begin::Label-->
-									<label class="required fs-6 fw-semibold mb-2">Uraian</label>
-									<!--end::Label-->
-									<!--begin::Input-->
-									<input type="text" class="form-control form-control-solid" placeholder="Uraian" name="uraian" value=""  id="uraian"/>
+									<input type="text" class="form-control form-control-solid" placeholder="No Nasabah" name="nonasabah" value=""  id="nonasabah"/>
 									<!--end::Input-->
 								</div>
 								<div class="fv-row mb-7">
 									<!--begin::Label-->
-									<label class="required fs-6 fw-semibold mb-2">Tgl</label>
+									<label class="required fs-6 fw-semibold mb-2">Nama</label>
 									<!--end::Label-->
 									<!--begin::Input-->
-									<input  name="tgl" id="tgl" placeholder="Pilih Tanggal" class="form-control mb-2 tgl" value="" onchange=""/>
+									<input type="text" class="form-control form-control-solid" placeholder="Nama" name="nama" value=""  id="nama" readonly/>
 									<!--end::Input-->
 								</div>
 								<div class="fv-row mb-7">
 									<!--begin::Label-->
-									<label class="required fs-6 fw-semibold mb-2">Jumlah</label>
+									<label class="required fs-6 fw-semibold mb-2">Alamat</label>
 									<!--end::Label-->
 									<!--begin::Input-->
-									<input type="text" class="form-control form-control-solid" placeholder="Jumlah" name="jumlah" value=""  id="jumlah"/>
+									<input type="text" class="form-control form-control-solid" placeholder="Nama" name="alamat" value=""  id="alamat" readonly/>
 									<!--end::Input-->
 								</div>
 							</div>
@@ -432,4 +420,25 @@
 		<!--begin::Vendors Javascript(used for this page only)-->
 		<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
 		<script src="assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script>
+		<script type="text/javascript">
+			$('#nonasabah').on('keyup', function (){
+				let query = $(this).val();
+				if (query.length > 2) {
+					$.ajax({
+						url: 'carianggotawajib', // Replace with your server URL
+						method: 'GET',
+						data: { search: query },
+						success: function (data) {
+							$.each(data, function (index, item) {
+								$('#nama').val(item.nama);
+								$('#alamat').val(item.alamat);
+							});
+						},
+						error: function (xhr, status, error) {
+							console.error('Error:', error);
+						}
+					});
+				}
+			});															
+		</script>
 </html>

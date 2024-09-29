@@ -51,4 +51,15 @@ class Kunjunganwajib extends BaseController
             return view('member/profile',$data);
         }
     }
+
+    function carianggota(){
+        $model = new Kunjunganwajibmodel();
+        $keyword = $this->request->getGet('search');
+        
+        if (isset($keyword) && !empty($keyword)) {
+            $result = $model->where('no_anggota', $keyword)->first();
+            return $this->response->setJSON($result);
+        }
+        return $this->response->setJSON([]);
+    }
 }
