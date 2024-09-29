@@ -256,13 +256,13 @@
 																					foreach($results as $row){
 																						?>
 																						<tr>
-																							<td><?php echo $row['no_anggota'];?></td>
-																							<td><?php echo $row['nama'];?></td>
-																							<td><?php echo $row['alamat'];?></td>
-																							<td><?php echo $row['location'];?></td>
-																							<td><?php echo $row['keterangan'];?></td>
-																							<td><?php echo $row['photo'];?></td>
-																							<td><?php echo $row['follwup_date'];?></td>
+																							<td><?php echo $row->no_anggota;?></td>
+																							<td><?php echo $row->nama;?></td>
+																							<td><?php echo $row->alamat;?></td>
+																							<td><?php echo $row->location;?></td>
+																							<td><?php echo $row->keterangan;?></td>
+																							<td><?php echo $row->photo;?></td>
+																							<td><?php echo $row->follwup_date;?></td>
 																							
 																						</tr>
 																						<?php

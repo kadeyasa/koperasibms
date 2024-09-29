@@ -32,4 +32,14 @@ class Kunjunganwajibmodel extends Model
         $this->db = \Config\Database::connect();
     }
     
+    function getRestData($kolektor,$start,$end){
+        if($kolektor=='all'){
+            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.follwup_date>='$start' AND a.follwup_date<='$end'";
+        }else{
+            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.kolektor='$kolektor' AND a.follwup_date>='$start' AND a.follwup_date<='$end'";
+        }
+        $query = $this->db->query($sql);
+        $row = $query->getResults();
+        return $row;
+    }
 }
