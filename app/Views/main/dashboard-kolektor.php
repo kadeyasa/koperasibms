@@ -237,22 +237,24 @@
 														</thead>
 														<tbody>
 															<?php
-																foreach($pengajuan_results as $row){
-																	if($row->status==0){
-																		$status = 'Pending';
-																	}else{
-																		$status='Sudah di Followup '.$row->keterangan;
+																if($pengajuan_results){
+																	foreach($pengajuan_results as $row){
+																		if($row->status==0){
+																			$status = 'Pending';
+																		}else{
+																			$status='Sudah di Followup '.$row->keterangan;
+																		}
+																		?>
+																		<tr>
+																			<td><?php echo $row->id_nasabah;?></td>
+																			<td><?php echo $row->nama;?></td>
+																			<td><?php echo $row->alamat;?></td>
+																			<td><?php echo $row->followup_date;?></td>
+																			<td><?php echo $status;?></td>
+																			<td><a href="tanganiwajib?id=<?php echo $row->id_nasabah;?>">Details</a></td>
+																		</tr>
+																		<?php
 																	}
-																	?>
-																	<tr>
-																		<td><?php echo $row->id_nasabah;?></td>
-																		<td><?php echo $row->nama;?></td>
-																		<td><?php echo $row->alamat;?></td>
-																		<td><?php echo $row->followup_date;?></td>
-																		<td><?php echo $status;?></td>
-																		<td><a href="tanganiwajib?id=<?php echo $row->id_nasabah;?>">Details</a></td>
-																	</tr>
-																	<?php
 																}
 															?>
 														</tbody>
