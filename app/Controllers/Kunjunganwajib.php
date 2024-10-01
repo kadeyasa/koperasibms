@@ -119,6 +119,7 @@ class Kunjunganwajib extends BaseController
     }
 
     function savetangani(){
+        $model = new Kunjunganwajibmodel();
         $upload = NEW Uploadkit();
         $bukti = $this->request->getVar('img_id');
 
@@ -134,5 +135,34 @@ class Kunjunganwajib extends BaseController
             $photo_bukti = $upload->uploaddata($uppath2,$bukti,'buktipembayaran');
             unlink($uppath2);
         }
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'keterangan' => 'required',
+            'lokasi' => 'required'
+        ]);
+
+        // Check validation
+        if (!$this->validate($validation->getRules())) {
+            session()->setFlashdata('error',$validation->getErrors());
+            return redirect()->back();
+        }
+        //data 
+        $keterangan = $this->request->getPost('keterangan');
+        $lokasi = $this->request->getPost('lokasi');
+        $id = $this->request->getPost('id');
+        $data = array(
+            'keterangan'=>$keterangan,
+            'location'=>$lokasi,
+            'photo'=>$photo_bukti
+        );
+       // Update the record
+        $update = $model->update($id, $data);
+
+        if ($update) {
+            session()->setFlashdata('success', 'Data updated successfully');
+        } else {
+            session()->setFlashdata('error', 'Failed to update data');
+        }
+        return redirect()->back();
     }
 }

@@ -220,7 +220,7 @@
                                                                         </div>
 																		<div class="row mb-5">
 																			<div class="col-md-12 fv-row">
-																					
+																					<input type="hidden" name="id" value="<?php echo $row->id;?>">
 																					<button class="btn btn-primary" style="width:100%;">Simpan</button>
 																			</div>
 																		</div>
