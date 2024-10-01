@@ -177,7 +177,7 @@
                                                                             <label class="required fs-6 fw-semibold mb-2">Jumlah Pinjaman</label>
                                                                             <!--end::Label-->
                                                                             <!--begin::Input-->
-                                                                            <input type="text" class="form-control form-control-solid" placeholder="jumlah pinjaman" name="jumlahpinjaman" value="<?php echo number_format($rowpinjaman->jumlah);?>"  id="pinjaman"/>
+                                                                            <input type="text" class="form-control form-control-solid" placeholder="jumlah pinjaman" name="jumlahpinjaman" value="<?php echo number_format($rowpinjaman['jumlah']);?>"  id="pinjaman"/>
                                                                             <!--end::Input-->
                                                                         </div>
                                                                         <div class="fv-row mb-7">
@@ -185,7 +185,7 @@
                                                                             <label class="required fs-6 fw-semibold mb-2">Jumlah Pokok</label>
                                                                             <!--end::Label-->
                                                                             <!--begin::Input-->
-                                                                            <input type="text" class="form-control form-control-solid" placeholder="jumlah pokok" name="jumlahpokok" value="<?php echo number_format($rowpinjaman->jumlah_pokok);?>"  id="jumlahpokok"/>
+                                                                            <input type="text" class="form-control form-control-solid" placeholder="jumlah pokok" name="jumlahpokok" value="<?php echo number_format($rowpinjaman['jumlah_pokok']);?>"  id="jumlahpokok"/>
                                                                             <!--end::Input-->
                                                                         </div>
                                                                         <div class="fv-row mb-7">
@@ -193,7 +193,7 @@
                                                                             <label class="required fs-6 fw-semibold mb-2">Jumlah Bunga</label>
                                                                             <!--end::Label-->
                                                                             <!--begin::Input-->
-                                                                            <input type="text" class="form-control form-control-solid" placeholder="jumlah bunga" name="jumlahbunga" value="<?php echo number_format($rowpinjaman->jumlah_pokok);?>"  id="jumlahbunga"/>
+                                                                            <input type="text" class="form-control form-control-solid" placeholder="jumlah bunga" name="jumlahbunga" value="<?php echo number_format($rowpinjaman['jumlah_bunga']);?>"  id="jumlahbunga"/>
                                                                             <!--end::Input-->
                                                                         </div>
                                                                         <div class="fv-row mb-7">
