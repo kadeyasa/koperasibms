@@ -15,7 +15,7 @@ class Kunjunganwajibmodel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['created_at', 'id_nasabah', 'follwup_date','location','photo','keterangan','status','kolektor'];
+    protected $allowedFields = ['created_at', 'id_nasabah', 'follwup_date','location','photo','keterangan','status','kolektor','statuskunjungan'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';
