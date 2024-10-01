@@ -48,7 +48,7 @@ class Kunjunganwajibmodel extends Model
         if($kolektor=='all'){
             $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.statuskunjungan=0";
         }else{
-            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.statuskunjungan=0";
+            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.statuskunjungan=0 AND a.kolektor='$kolektor'";
         }
         //echo $sql;
         $query = $this->db->query($sql);
