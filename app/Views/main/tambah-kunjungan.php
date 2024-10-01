@@ -210,7 +210,7 @@
                                                                             <label class="required fs-6 fw-semibold mb-2">Lokasi</label>
                                                                             <input type="hidden" id="lat">
 																			<input type="hidden" id="lang">
-																			<input type="hidden" class="lokasi form-control" name="lokasi"  style="width:100%;">
+																			<input type="text" class="lokasi form-control" name="lokasi"  style="width:100%;">
                                                                         </div>
                                                                         <div class="fv-row mb-7">
                                                                             <input type="hidden" name="photo" value="" id="img_id">
