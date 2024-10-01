@@ -154,7 +154,8 @@ class Kunjunganwajib extends BaseController
         $data = array(
             'keterangan'=>$keterangan,
             'location'=>$lokasi,
-            'photo'=>$photo_bukti
+            'photo'=>$photo_bukti,
+            'statuskunjungan'=>1
         );
        // Update the record
         $update = $model->update($id, $data);

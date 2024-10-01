@@ -267,7 +267,7 @@
 																							<td><?php echo $row->alamat;?></td>
 																							<td><?php echo $row->location;?></td>
 																							<td><?php echo $row->keterangan;?></td>
-																							<td><?php echo $row->photo;?></td>
+																							<td><a href="<?php echo $row->photo;?>" target="__blank"><img src="<?php echo $row->photo;?>" width="200"></a></td>
 																							<td><?php echo $row->follwup_date;?></td>
 																							<td><?php echo $row->status;?></td>
 																						</tr>
