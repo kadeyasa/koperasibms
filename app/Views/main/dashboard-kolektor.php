@@ -230,7 +230,7 @@
 																<th class="min-w-125px">No Anggota</th>
 																<th class="min-w-125px">Nama</th>
 																<th class="min-w-125px">Alamat</th>
-																<th class="min-w-125px">Followup Date</th>
+																
 																<th class="min-w-125px">Status</th>
 																<th class="min-w-125px">Action</th>
 															</tr>
@@ -249,7 +249,6 @@
 																			<td><?php echo $row->id_nasabah;?></td>
 																			<td><?php echo $row->nama;?></td>
 																			<td><?php echo $row->alamat;?></td>
-																			<td><?php //echo $row->followup_date;?></td>
 																			<td><?php echo $status;?></td>
 																			<td><a href="tanganiwajib?id=<?php echo $row->id_nasabah;?>">Details</a></td>
 																		</tr>
