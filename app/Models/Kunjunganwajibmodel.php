@@ -62,4 +62,11 @@ class Kunjunganwajibmodel extends Model
         $row = $query->getRow();
         return $row;
     }
+
+    function updatekunjungan($id_nasabah){
+        $keterangan = "Bayar tanggal ".date('Y-m-d');
+        $sql="UPDATE tbkunjunganwajib SET statuskunjungan='1', keterangan='$keterangan' WHERE id_nasabah='$id_nasabah'";
+        $query = $this->db->query($sql);
+        return $query;
+    }
 }

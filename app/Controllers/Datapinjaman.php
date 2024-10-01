@@ -21,6 +21,7 @@ use App\Models\Pendapatanmodel;
 use App\Models\Pinjamanviewmodel;
 use App\Models\Statusmodel;
 use App\Libraries\Uploadkit;
+use App\Models\Kunjunganwajibmodel;
 class Datapinjaman extends BaseController
 {
     public function __construct(){
@@ -821,7 +822,9 @@ class Datapinjaman extends BaseController
                         $this->jurnalangsuranpokok($id_transaksi,$data_tempo->jumlah_pokok,$akun,$data_pinjaman,$tgl);
                         //komen dulu untuk setup awal
                         $this->jurnalangsuranbunga($id_transaksi,$data_tempo->jumlah_bunga,$akun,$data_pinjaman,$tgl);
-                        
+                        //save ke followup jika ada di data followup 
+                        $model = new Kunjunganwajibmodel();
+                        $updatekunjungan = $model->updatekunjungan($data_pinjaman->no_anggota);
                     }    
                 }
             }
