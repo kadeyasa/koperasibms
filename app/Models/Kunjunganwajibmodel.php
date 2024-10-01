@@ -45,7 +45,7 @@ class Kunjunganwajibmodel extends Model
     }
 
     function getDataById($id){
-        $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.id_nasabah='$id' ORDER BY id DESC";
+        $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.id_nasabah='$id' ORDER BY a.id DESC";
         $query = $this->db->query($sql);
         $row = $query->getRow();
         return $row;
