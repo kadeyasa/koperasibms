@@ -117,4 +117,22 @@ class Kunjunganwajib extends BaseController
             return view('main/tambah-kunjungan',$data);
         }
     }
+
+    function savetangani(){
+        $upload = NEW Uploadkit();
+        $bukti = $this->request->getVar('img_id');
+
+        if(!$bukti){
+            session()->setFlashdata('error','Photo Bukti Belum terisi');
+            return redirect()->back();
+        }
+
+        if($bukti==''){
+            $photo_bukti='';
+        }else{
+            $uppath2 = WRITEPATH . 'uploads/'.$bukti;
+            $photo_bukti = $upload->uploaddata($uppath2,$bukti,'buktipembayaran');
+            unlink($uppath2);
+        }
+    }
 }

@@ -146,6 +146,7 @@
                                                                 <!--end::Card header-->
                                                                 <!--begin::Card body-->
                                                                 <div class="card-body pt-0">
+																<?php echo form_open('savekunjunganwajib',array('method'=>'post'));?>
 																	<h3>Detail Kunjungan</h3>
                                                                     <div class="row">
                                                                         <div class="fv-row mb-7">
@@ -204,13 +205,28 @@
                                                                             <input type="text" class="form-control form-control-solid" placeholder="Keterangan" name="keterangan" value=""  id="keterangan"/>
                                                                             <!--end::Input-->
                                                                         </div>
+																		<div class="fv-row mb-7">
+                                                                            <!--begin::Label-->
+                                                                            <label class="required fs-6 fw-semibold mb-2">Lokasi</label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Input-->
+                                                                            <input type="text" class="form-control form-control-solid" placeholder="lokasi" name="keterangan" value=""  id="lokasi" class="lokasi"/>
+                                                                            <!--end::Input-->
+                                                                        </div>
                                                                         <div class="fv-row mb-7">
                                                                             <input type="hidden" name="photo" value="" id="img_id">
                                                                             <label class="fs-5 fw-semibold mb-2"><div id="camera" style="width:50%;"></div></label>
                                                                             <br/>
                                                                             <button onclick="return capture()" class="capture btn btn-warning" >PHOTO</button>
                                                                         </div>
+																		<div class="row mb-5">
+																			<div class="col-md-12 fv-row">
+																					
+																					<button class="btn btn-primary" style="width:100%;">Simpan</button>
+																			</div>
+																		</div>
                                                                     </div>
+																	<?php echo form_close();?>
                                                                 </div>
                                                             </div>
                                                             <!--end::Card-->
@@ -277,6 +293,34 @@
         <script src="assets/js/custom/apps/ecommerce/customers/listing/add-setupbiaya.js"></script>
         <script src="assets/js/custom/apps/ecommerce/customers/listing/listing-setupbiaya.js"></script>
         <script>
+			$( document ).ready(function() {
+				getLocation();
+			});
+			var x = document.getElementById("demo");
+	
+			function getLocation() {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(showPosition);
+				} else { 
+					Swal.fire({
+						text: "Lokasi belum di aktifkan",
+						icon: "error",
+						buttonsStyling: !1,
+						confirmButtonText: "Ok, got it!",
+						customClass: { confirmButton: "btn btn-primary" },
+					}).then(function (e) {
+						e.isConfirmed && ((r.disabled = !1), (window.location = t.getAttribute("data-kt-redirect")));
+					});
+				}
+			}
+			
+			function showPosition(position) {
+				var lokasi = position.coords.latitude+','+position.coords.longitude;
+				$('.lokasi').val(lokasi);
+				$('#lat').val(position.coords.latitude);
+				$('#lang').val(position.coords.longitude);
+				$('.lokasi-info').html(lokasi);
+			}
             // WebcamJS initialization
             Webcam.set({
 				width: 250,

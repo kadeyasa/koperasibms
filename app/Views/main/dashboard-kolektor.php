@@ -224,6 +224,7 @@
 												<!--end::Header-->
                                                 <div class="card-body pt-5">
                                                 	<p>Follow up Nasabah berikut ini</p>
+													<div class="table-responsive">
 													<table class="table align-middle table-row-dashed fs-6 gy-5">
 														<thead>
 															<tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
@@ -258,6 +259,7 @@
 															?>
 														</tbody>
 													</table>
+													</div>
                                                 </div>
                                             </div>
                                     	</div>
