@@ -279,31 +279,45 @@
         <script>
             // WebcamJS initialization
             Webcam.set({
-                width: 250,
-                height: 200,
-                dest_width: 640,
-                dest_height: 480,
-                image_format: 'jpeg',
-                jpeg_quality: 90
-            });
+				width: 250,
+				height: 200,
+				dest_width: 640,
+				dest_height: 480,
+				image_format: 'jpeg',
+				jpeg_quality: 90,
+				constraints: {
+					facingMode: 'environment'
+				}
+			});
 
             Webcam.attach('#camera');
 
             
-            function absen(){
-                var id=$('#img_id').val();
-                $('.btn-absen').prop('disabled',true);
-                $('.btn-absen').html('Please wait.....');
-                $.post("simpanabsen",
-                {
-                    photo:id 
-                },
-                function(data, status){
-                    alert("Data: " + data + "\nStatus: " + status);
-                    location.reload();
-                });
-                
-            }
+            function capture() {
+				Webcam.snap(function(data_uri) {
+					// Send data_uri to your server (CodeIgniter controller)
+					// Use AJAX to send the captured image data to the server
+					fetch('<?= base_url('capture') ?>', {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/x-www-form-urlencoded',
+							'X-Requested-With': 'XMLHttpRequest'
+						},
+						body: 'data_uri=' + encodeURIComponent(data_uri)
+					})
+					.then(response => response.json())
+					.then(data => {
+						$('#img_id').val(data.message);
+						$('#camera').html('<img src="<?php echo site_url('show/');?>'+data.message+'" width="100%">');
+						//alert(data.message);
+						$('.capture').hide();
+					})
+					.catch(error => {
+						console.error('Error:', error);
+					});
+				});
+				return false;
+			}
         </script>	
 		<script type="text/javascript">
 			$("#followupdate").flatpickr({ altInput: !0, altFormat: "Y-m-d", dateFormat: "Y-m-d" });
