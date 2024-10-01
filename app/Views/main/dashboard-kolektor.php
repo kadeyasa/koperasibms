@@ -249,7 +249,7 @@
 																			<td><?php echo $row->id_nasabah;?></td>
 																			<td><?php echo $row->nama;?></td>
 																			<td><?php echo $row->alamat;?></td>
-																			<td><?php echo $row->followup_date;?></td>
+																			<td><?php //echo $row->followup_date;?></td>
 																			<td><?php echo $status;?></td>
 																			<td><a href="tanganiwajib?id=<?php echo $row->id_nasabah;?>">Details</a></td>
 																		</tr>
