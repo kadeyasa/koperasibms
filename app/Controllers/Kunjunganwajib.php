@@ -122,7 +122,7 @@ class Kunjunganwajib extends BaseController
     function savetangani(){
         $model = new Kunjunganwajibmodel();
         $upload = NEW Uploadkit();
-        $bukti = $this->request->getVar('img_id');
+        $bukti = $this->request->getPost('photo');
 
         if(!$bukti){
             session()->setFlashdata('error','Photo Bukti Belum terisi');
