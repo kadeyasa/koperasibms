@@ -144,7 +144,7 @@ class Kunjunganwajib extends BaseController
 
         // Check validation
         if (!$this->validate($validation->getRules())) {
-            session()->setFlashdata('error',$validation->getErrors());
+            session()->setFlashdata('error',json_encode($validation->getErrors()));
             return redirect()->back();
         }
         //data 
