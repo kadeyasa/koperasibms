@@ -191,6 +191,7 @@ $routes->get('/kunjunganwajib', 'Kunjunganwajib::index',['filter' => 'auth']);
 $routes->get('/carianggotawajib', 'Kunjunganwajib::carianggota',['filter' => 'auth']);
 $routes->post('/tambahkunjunganwajib', 'Kunjunganwajib::addkunjungan',['filter' => 'auth']);
 $routes->get('/tanganiwajib', 'Kunjunganwajib::tangani',['filter' => 'auth']);
+$routes->post('/savekunjunganwajib', 'Kunjunganwajib::savetangani',['filter' => 'auth']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing
