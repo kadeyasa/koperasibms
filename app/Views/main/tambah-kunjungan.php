@@ -208,10 +208,9 @@
 																		<div class="fv-row mb-7">
                                                                             <!--begin::Label-->
                                                                             <label class="required fs-6 fw-semibold mb-2">Lokasi</label>
-                                                                            <!--end::Label-->
-                                                                            <!--begin::Input-->
-                                                                            <input type="text" class="form-control form-control-solid" placeholder="lokasi" name="keterangan" value=""  id="lokasi" class="lokasi"/>
-                                                                            <!--end::Input-->
+                                                                            <input type="hidden" id="lat">
+																			<input type="hidden" id="lang">
+																			<input type="hidden" class="lokasi form-control" name="lokasi"  style="width:100%;">
                                                                         </div>
                                                                         <div class="fv-row mb-7">
                                                                             <input type="hidden" name="photo" value="" id="img_id">
@@ -282,6 +281,9 @@
 			<!--end::Page-->
 		</div>
 		<!--end::App-->
+		<?php 
+            include('footer.php');
+        ?>
 		<script>var hostUrl = "assets/";</script>
 		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
 		<script src="assets/plugins/global/plugins.bundle.js"></script>
