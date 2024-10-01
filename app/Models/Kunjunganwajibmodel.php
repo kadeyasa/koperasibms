@@ -44,6 +44,18 @@ class Kunjunganwajibmodel extends Model
         return $row;
     }
 
+    function getRestDataKolektor($kolektor,$start,$end){
+        if($kolektor=='all'){
+            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.statuskunjungan=0";
+        }else{
+            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.statuskunjungan=0";
+        }
+        //echo $sql;
+        $query = $this->db->query($sql);
+        $row = $query->getResult();
+        return $row;
+    }
+
     function getDataById($id){
         $sql ="SELECT a.*,b.nama,b.alamat FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.id_nasabah='$id' ORDER BY a.id DESC";
         $query = $this->db->query($sql);

@@ -24,7 +24,7 @@ class Member extends BaseController
             $row = $absensi->where('id_karyawan',session()->get('user_id'))->orderby('id','DESC')->first();
             $datapengajuan = $pengajuan->where('user',session('username'))->where('status',0)->orderby('id','DESC')->findAll();
             $_date = date('Y-m-d');
-            $pengajuan_results = $model->getRestData(session('username'),$_date,$_date);
+            $pengajuan_results = $model->getRestDataKolektor(session('username'),$_date,$_date);
             if($row){
                 if($row['created_at']>=date('Y-m-d')){
                     
