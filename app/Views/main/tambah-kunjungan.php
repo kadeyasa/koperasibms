@@ -216,7 +216,7 @@
                                                                             <!--begin::Label-->
                                                                             <label class="required fs-6 fw-semibold mb-2">Ada Janji Bayar ?</label>
                                                                             <input type="checkbox" name="janji" class="checkjanji">
-																			<input id="kt_ecommerce_edit_order_date" name="start" placeholder="Pilih Tanggal" class="form-control mb-2 tgljanji" value="" onchange="" style="display:none;"/>
+																			<input id="kt_ecommerce_edit_order_date" name="start" placeholder="Pilih Tanggal" class="form-control mb-2 tgljanji" value="" onchange=""/>
                                                                         </div>
                                                                         <div class="fv-row mb-7">
                                                                             <input type="hidden" name="photo" value="" id="img_id">
@@ -303,6 +303,7 @@
         <script>
 			$( document ).ready(function() {
 				getLocation();
+				$('.tgljanji').hide();
 			});
 			var x = document.getElementById("demo");
 	
