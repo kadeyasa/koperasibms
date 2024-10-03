@@ -151,12 +151,24 @@ class Kunjunganwajib extends BaseController
         $keterangan = $this->request->getPost('keterangan');
         $lokasi = $this->request->getPost('lokasi');
         $id = $this->request->getPost('id');
-        $data = array(
-            'keterangan'=>$keterangan,
-            'location'=>$lokasi,
-            'photo'=>$photo_bukti,
-            'statuskunjungan'=>1
-        );
+        $tgljanji = $this->request->getPost('start');
+        $janji = $this->request->getPost('janji');
+        if(isset($janji)){
+            $data = array(
+                'keterangan'=>$keterangan,
+                'location'=>$lokasi,
+                'photo'=>$photo_bukti,
+                'statuskunjungan'=>0,
+                'tgl_janji'=>$tgljanji
+            );
+        }else{
+            $data = array(
+                'keterangan'=>$keterangan,
+                'location'=>$lokasi,
+                'photo'=>$photo_bukti,
+                'statuskunjungan'=>1
+            );
+        }
        // Update the record
         $update = $model->update($id, $data);
 

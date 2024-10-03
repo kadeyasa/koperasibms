@@ -212,6 +212,12 @@
 																			<input type="hidden" id="lang">
 																			<input type="text" class="lokasi form-control" name="lokasi"  style="width:100%;">
                                                                         </div>
+																		<div class="fv-row mb-7">
+                                                                            <!--begin::Label-->
+                                                                            <label class="required fs-6 fw-semibold mb-2">Ada Janji Bayar ?</label>
+                                                                            <input type="checkbox" name="janji" class="form-control checkjanji">
+																			<input id="kt_ecommerce_edit_order_date" name="start" placeholder="Pilih Tanggal" class="form-control mb-2 tgljanji" value="" onchange="" style="display:none;"/>
+                                                                        </div>
                                                                         <div class="fv-row mb-7">
                                                                             <input type="hidden" name="photo" value="" id="img_id">
                                                                             <label class="fs-5 fw-semibold mb-2"><div id="camera" style="width:50%;"></div></label>
@@ -366,6 +372,17 @@
 			}
         </script>	
 		<script type="text/javascript">
+
+			$(document).ready(function() {
+				$('.checkjanji').click(function() {
+					if ($(this).is(':checked')) {
+						$('.tgljanji').show(); // Show date input
+					} else {
+						$('.tgljanji').hide(); // Hide date input
+					}
+				});
+			});
+			
 			$("#followupdate").flatpickr({ altInput: !0, altFormat: "Y-m-d", dateFormat: "Y-m-d" });
 			$('#nonasabah').on('keyup', function (){
 				let query = $(this).val();
