@@ -215,7 +215,7 @@
 																		<div class="fv-row mb-7">
                                                                             <!--begin::Label-->
                                                                             <label class="required fs-6 fw-semibold mb-2">Ada Janji Bayar ?</label>
-                                                                            <input type="checkbox" name="janji" class="form-control checkjanji">
+                                                                            <input type="checkbox" name="janji" class="checkjanji">
 																			<input id="kt_ecommerce_edit_order_date" name="start" placeholder="Pilih Tanggal" class="form-control mb-2 tgljanji" value="" onchange="" style="display:none;"/>
                                                                         </div>
                                                                         <div class="fv-row mb-7">
@@ -382,7 +382,7 @@
 					}
 				});
 			});
-			
+
 			$("#followupdate").flatpickr({ altInput: !0, altFormat: "Y-m-d", dateFormat: "Y-m-d" });
 			$('#nonasabah').on('keyup', function (){
 				let query = $(this).val();
