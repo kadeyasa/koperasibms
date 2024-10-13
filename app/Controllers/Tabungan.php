@@ -8,8 +8,6 @@ use App\Models\Tabunganmodel;
 class Tabungan extends BaseController
 {
 	public function __construct(){
-        //$this->load->model(array('usermodel'));
-    	$this->usermodel=new Usermodel();
         helper('form');
         date_default_timezone_set('Asia/Singapore');
     }
