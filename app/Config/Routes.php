@@ -186,6 +186,9 @@ $routes->get('/laporankas', 'Laporan::laporankas',['filter' => 'auth']);
 $routes->get('/printlaporankas', 'Laporan::printlaporankas',['filter' => 'auth']);
 $routes->post('/simpankasharian', 'Laporan::simpankasharian',['filter' => 'auth']);
 
+//tabungan 
+$routes->get('/data-tabungan', 'Tabungan::datatabungan',['filter' => 'auth']);
+
 //module kunjungawajib
 $routes->get('/kunjunganwajib', 'Kunjunganwajib::index',['filter' => 'auth']);
 $routes->get('/carianggotawajib', 'Kunjunganwajib::carianggota',['filter' => 'auth']);
