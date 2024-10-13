@@ -34,9 +34,9 @@ class Kunjunganwajibmodel extends Model
     
     function getRestData($kolektor,$start,$end){
         if($kolektor=='all'){
-            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.follwup_date>='$start' AND a.follwup_date<='$end'";
+            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.follwup_date>='$start' AND a.follwup_date<='$end' ORDER BY tgl_janji DESC";
         }else{
-            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.kolektor='$kolektor' AND a.follwup_date>='$start' AND a.follwup_date<='$end'";
+            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.kolektor='$kolektor' AND a.follwup_date>='$start' AND a.follwup_date<='$end' ORDER BY tgl_janji DESC";
         }
         //echo $sql;
         $query = $this->db->query($sql);
@@ -46,9 +46,9 @@ class Kunjunganwajibmodel extends Model
 
     function getRestDataKolektor($kolektor,$start,$end){
         if($kolektor=='all'){
-            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.statuskunjungan=0";
+            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.statuskunjungan=0 ORDER BY tgl_janji DESC";
         }else{
-            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.statuskunjungan=0 AND a.kolektor='$kolektor'";
+            $sql ="SELECT * FROM `tbkunjunganwajib` a JOIN tbanggota b ON a.id_nasabah=b.no_anggota WHERE a.statuskunjungan=0 AND a.kolektor='$kolektor' ORDER BY tgl_janji DESC";
         }
         //echo $sql;
         $query = $this->db->query($sql);

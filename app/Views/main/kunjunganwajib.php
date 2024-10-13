@@ -245,6 +245,7 @@
 																					<th class="min-w-125px">Keterangan</th>
 																					<th class="min-w-125px">Photo</th>
 																					<th class="min-w-125px">Followup Date</th>
+                                                                                	<th class="min-w-125px">Tgl Janji</th>
                                                                                     <th class="min-w-125px">Status</th>
 																				</tr>
 																				<!--end::Table row-->
@@ -269,6 +270,7 @@
 																							<td><?php echo $row->keterangan;?></td>
 																							<td><a href="<?php echo $row->photo;?>" target="__blank"><img src="<?php echo $row->photo;?>" width="200"></a></td>
 																							<td><?php echo $row->follwup_date;?></td>
+                                                                                            <td><?php echo $row->tgl_janji;?></td>
 																							<td><?php echo $row->status;?></td>
 																						</tr>
 																						<?php
