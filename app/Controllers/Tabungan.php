@@ -14,21 +14,22 @@ class Tabungan extends BaseController
 
     function datatabungan(){
         $model = new Tabunganmodel();
-        
-        // Base query
-        $model->select("tb_saldo_tabungan.saldo, tbnasabah_tabungan.*")
-              ->from("tb_saldo_tabungan")
-              ->join('tbnasabah_tabungan', 'tbnasabah_tabungan.id = tb_saldo_tabungan.id_nasabah');
-        
+
+        // Base query with aliases
+        $model->select("s.saldo, n.*")
+            ->from("tb_saldo_tabungan as s")  // Alias for tb_saldo_tabungan
+            ->join('tbnasabah_tabungan as n', 'n.id = s.id_nasabah');  // Alias for tbnasabah_tabungan
+
         // Check if a keyword is set and not empty
         if (isset($_GET['keyword']) && !empty($_GET['keyword'])) {
             $keyword = $_GET['keyword'];
             // Apply 'like' condition for nasabah's name if keyword is present
-            $model->where_like('tbnasabah_tabungan.nama', $keyword);
+            $model->where_like('n.nama', $keyword);  // Use alias 'n' for tbnasabah_tabungan
         }
-    
+
         // Retrieve all matching records
         $results = $model->findAll();
+
         $data = array(
             'results'=>$results	
         );
