@@ -30,7 +30,7 @@
 									<!--begin::Page title-->
 									<div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
 										<!--begin::Title-->
-										<h1 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">Laporan Kunjungan</h1>
+										<h1 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">Data Tabungan</h1>
 										<!--end::Title-->
 										<!--begin::Breadcrumb-->
 										<ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
@@ -45,7 +45,7 @@
 											</li>
 											<!--end::Item-->
 											<!--begin::Item-->
-											<li class="breadcrumb-item text-muted">Laporan Kunjungan</li>
+											<li class="breadcrumb-item text-muted">Data Tabungan</li>
 											<!--end::Item-->
 										</ul>
 										<!--end::Breadcrumb-->
@@ -163,7 +163,7 @@
 																				<div class="fs-6 fw-bold text-gray-700 text-nowrap">Nama Nasabah: &nbsp;</div>
 																				<!--end::Date-->
 																				<!--begin::Input-->
-																				<div class="position-relative d-flex align-items-center w-150px">
+																				<div class="position-relative d-flex align-items-center w-300px">
 																					
 																					<input  name="keyword" placeholder="Masukan Nama Nasabah" class="form-control mb-2" value=""/>
 																					
@@ -298,11 +298,11 @@
 				<!--begin::Modal content-->
 				<div class="modal-content">
 					<!--begin::Form-->
-					<form class="form" method="post" action="<?php echo site_url('tambahkunjunganwajib');?>" id="kt_modal_add_customer_form" data-kt-redirect="<?php echo site_url('anggota');?>">
+					<form class="form" method="post" action="<?php echo site_url('tambahnasabahtabungan');?>" id="kt_modal_add_customer_form" data-kt-redirect="<?php echo site_url('anggota');?>">
 						<!--begin::Modal header-->
 						<div class="modal-header" id="kt_modal_add_customer_header">
 							<!--begin::Modal title-->
-							<h2 class="fw-bold">Tambah Kunjungan Wajib</h2>
+							<h2 class="fw-bold">Tambah Nasabah</h2>
 							<!--end::Modal title-->
 							<!--begin::Close-->
 							<div id="kt_modal_add_customer_close" class="btn btn-icon btn-sm btn-active-icon-primary">
@@ -326,10 +326,18 @@
 								<!--begin::Input group-->
 								<div class="fv-row mb-7">
 									<!--begin::Label-->
-									<label class="required fs-6 fw-semibold mb-2">NO Nasabah</label>
+									<label class="required fs-6 fw-semibold mb-2">No Rekening</label>
 									<!--end::Label-->
 									<!--begin::Input-->
-									<input type="text" class="form-control form-control-solid" placeholder="No Nasabah" name="nonasabah" value=""  id="nonasabah"/>
+									<input type="text" class="form-control form-control-solid" placeholder="No Rekening" name="norek" value=""  id="norek"/>
+									<!--end::Input-->
+								</div>
+                                <div class="fv-row mb-7">
+									<!--begin::Label-->
+									<label class="required fs-6 fw-semibold mb-2">NIK</label>
+									<!--end::Label-->
+									<!--begin::Input-->
+									<input type="text" class="form-control form-control-solid" placeholder="NIK" name="nik" value=""  id="nik"/>
 									<!--end::Input-->
 								</div>
 								<div class="fv-row mb-7">
@@ -350,10 +358,18 @@
 								</div>
 								<div class="fv-row mb-7">
 									<!--begin::Label-->
-									<label class="required fs-6 fw-semibold mb-2">Followup date</label>
+									<label class="required fs-6 fw-semibold mb-2">No HP</label>
 									<!--end::Label-->
 									<!--begin::Input-->
-									<input type="text" class="form-control form-control-solid" placeholder="followupdate" name="followupdate" id="followupdate"/>
+									<input type="text" class="form-control form-control-solid" placeholder="No HP" name="no_hp" id="no_hp"/>
+									<!--end::Input-->
+								</div>
+                                <div class="fv-row mb-7">
+									<!--begin::Label-->
+									<label class="required fs-6 fw-semibold mb-2">Saldo</label>
+									<!--end::Label-->
+									<!--begin::Input-->
+									<input type="text" class="form-control form-control-solid" placeholder="No HP" name="saldo" id="saldo"/>
 									<!--end::Input-->
 								</div>
 								
@@ -392,74 +408,4 @@
 		<script src="assets/js/custom/utilities/modals/users-search.js"></script>
         <script src="assets/js/custom/apps/ecommerce/customers/listing/add-setupbiaya.js"></script>
         <script src="assets/js/custom/apps/ecommerce/customers/listing/listing-setupbiaya.js"></script>
-		<script type="text/javascript">
-			$("#followupdate").flatpickr({ altInput: !0, altFormat: "Y-m-d", dateFormat: "Y-m-d" });
-			$('#nonasabah').on('keyup', function (){
-				let query = $(this).val();
-				if (query.length > 2) {
-					$.ajax({
-						url: 'carianggotawajib', // Replace with the actual controller URL
-						method: 'GET',
-						data: { search: query },
-						dataType: 'json', // Make sure dataType is set to 'json'
-						success: function (data) {
-							//alert(data.nama);
-							$('#nama').val(data.nama);
-							$('#alamat').val(data.alamat);
-						},
-						error: function (xhr, status, error) {
-							console.error('Error:', error);
-						}
-					});
-				} else {
-					$('#nama').val('');
-					$('#alamat').val('');
-				}
-			});
-			$('#simpankunjunganwajib').click(function(){
-			// Disable the button to prevent multiple submissions
-			$('#simpankunjunganwajib').prop('disabled', true);
-
-			// Collect form data
-			var kolektor = $('#kolektordata').val();
-			var nonasabah = $('#nonasabah').val();
-			var followupDate = $('#followupdate').val();
-
-			// Check if any fields are empty
-			if (kolektor === '' || nonasabah === '' || followupDate === '') {
-				alert('Data tidak lengkap');
-				$('#simpankunjunganwajib').prop('disabled', false); // Re-enable the button
-			} else {
-				// Perform the AJAX request
-				$.ajax({
-					url: 'tambahkunjunganwajib', // Replace with the correct URL to your controller's method
-					method: 'POST',
-					data: {
-						kolektor: kolektor,
-						nonasabah: nonasabah,
-						date: followupDate
-					},
-					dataType: 'json', // Expect a JSON response from the server
-					success: function(response) {
-						if (response.status === 'success') {
-							alert(response.message); // Display success message
-							// You may want to clear the form fields or perform other actions here
-							$('#kolektordata').val('');
-							$('#nonasabah').val('');
-							$('#followupdate').val('');
-						} else {
-							alert('Error: ' + response.message); // Display error message
-						}
-						$('#simpankunjunganwajib').prop('disabled', false); // Re-enable the button
-					},
-					error: function(xhr, status, error) {
-						alert('An error occurred: ' + error); // Display AJAX error
-						$('#simpankunjunganwajib').prop('disabled', false); // Re-enable the button
-					}
-				});
-			}
-		});
-
-		</script>
-
 </html>

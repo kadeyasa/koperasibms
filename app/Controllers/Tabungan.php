@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Libraries\Uploadkit;
 use App\Models\Tabunganmodel;
+use App\Models\Saldomodel;
 
 class Tabungan extends BaseController
 {
@@ -37,6 +38,59 @@ class Tabungan extends BaseController
             return view('main/data-tabungan',$data);
         }else{
             return view('member/profile',$data);
+        }
+    }
+
+    function tambahnasabah(){
+        $model = new Tabunganmodel();
+        // Validation rules
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'norek' => 'required',
+            'nama' => 'required',
+            'saldo' => 'required',
+        ]);
+
+        // Check validation
+        if (!$this->validate($validation->getRules())) {
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => $validation->getErrors()
+            ]);
+        }
+
+        // Collect data
+        $norek = $this->request->getPost('norek');
+        $nama = $this->request->getPost('nama');
+        $alamat = $this->request->getPost('alamat');
+        $nik = $this->request->getPost('nik');
+        $no_hp = $this->request->getPost('no_hp');
+        $saldo = $this->request->getPost('saldo');
+
+        $datanasabah = [
+            'nama' => $nama,
+            'alamat' => $alamat,
+            'no_hp' => $no_hp,
+            'no_rekening'=>$norek
+        ];
+
+        if ($model->insert($datanasabah)) {
+            //get insert id 
+            $modelsaldo = NEW Saldomodel();
+
+            $insertID = $model->insertID();
+            $data_saldo = array(
+                'id_nasabah'=>$insertID,
+                'saldo'=>$saldo
+            );
+            if($modelsaldo->insert($data_saldo)){
+                return redirect('data-tabungan');
+            }
+        } else {
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => 'Failed to add kunjungan'
+            ]);
         }
     }
 }
