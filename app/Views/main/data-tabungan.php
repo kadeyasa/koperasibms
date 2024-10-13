@@ -224,7 +224,7 @@
 																							<td><?php echo $row->no_hp;?></td>
                                                                                             <td><?php echo number_format($row->saldo);?></td>
 																							<td>
-                                                                                                
+
                                                                                             </td>
 																						</tr>
 																						<?php
@@ -356,21 +356,7 @@
 									<input type="text" class="form-control form-control-solid" placeholder="followupdate" name="followupdate" id="followupdate"/>
 									<!--end::Input-->
 								</div>
-								<div class="fv-row mb-7">
-									<!--begin::Label-->
-									<label class="required fs-6 fw-semibold mb-2">Kolektor</label>
-									<!--end::Label-->
-									<!--begin::Input-->
-									<!--begin::Select2-->
-									<select data-placeholder="Pilih Kolektor"  name="kolektordata" id="kolektordata" class="form-control">
-										<option></option>
-										<?php foreach($kolektors as $row_kolektor){?>
-											<option value="<?php echo $row_kolektor['username'];?>"><?php echo $row_kolektor['username'];?></option>
-										<?php }?>
-									</select>
-									<!--end::Select2-->
-									<!--end::Input-->
-								</div>
+								
 							</div>
 							<!--end::Scroll-->
 						</div>
