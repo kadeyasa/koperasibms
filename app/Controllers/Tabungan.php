@@ -138,7 +138,7 @@ class Tabungan extends BaseController
         $model = NEW Mutasitabunganmodel();
         $datamutasi = [
             'id_nasabah' => $idnasabah,
-            'uraian' => $alamat,
+            'uraian' => $uraian,
             'transaksi_id' => $transaksi_id,
             'debet'=>$debet,
             'photo_buku'=>$photo_bukti
