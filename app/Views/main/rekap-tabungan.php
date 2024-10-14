@@ -154,18 +154,6 @@
 																		<!--end::Add customer-->
                                                                         <div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
 																			
-                                                                            <!--begin::Filter-->
-                                                                            <div class="w-150px me-3">
-                                                                                <!--begin::Select2-->
-                                                                                <select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Pilih Kolektor" data-kt-ecommerce-order-filter="status" name="kolektor">
-                                                                                    <option></option>
-																					<?php foreach($kolektors as $row_kolektor){?>
-																						<option value="<?php echo $row_kolektor['username'];?>"><?php echo $row_kolektor['username'];?></option>
-																					<?php }?>
-                                                                                </select>
-                                                                                <!--end::Select2-->
-                                                                            </div>
-                                                                            <!--end::Filter-->
 																			<!--begin::Input group-->
 																			<div class="d-flex align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Specify invoice date">
 																				<!--begin::Date-->
