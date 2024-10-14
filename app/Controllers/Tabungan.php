@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Libraries\Uploadkit;
 use App\Models\Tabunganmodel;
 use App\Models\Nasabahtabunganmodel;
+use App\Models\Mutasitabunganmodel;
 
 class Tabungan extends BaseController
 {
@@ -91,6 +92,59 @@ class Tabungan extends BaseController
                 'status' => 'error',
                 'message' => 'Failed to add kunjungan'
             ]);
+        }
+    }
+    
+    function tambahtabungan(){
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'idnasabah' => 'required',
+            'photo' => 'required',
+            'uraian' => 'required',
+            'debet' => 'required'
+        ]);
+
+
+        // Check validation
+        if (!$this->validate($validation->getRules())) {
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => $validation->getErrors()
+            ]);
+        }
+
+        $bukti = $this->request->getPost('photo');
+
+        if(!$bukti){
+            session()->setFlashdata('error','Photo Bukti Belum terisi');
+            return redirect()->back();
+        }
+
+        if($bukti==''){
+            $photo_bukti='';
+        }else{
+            $uppath2 = WRITEPATH . 'uploads/'.$bukti;
+            $photo_bukti = $upload->uploaddata($uppath2,$bukti,'buktipembayaran');
+            unlink($uppath2);
+        }
+
+        $idnasabah = $this->request->getPost('idnasabah');
+        $uraian = $this->request->getPost('uraian');
+        $debet = $this->request->getPost('debet');
+
+        $transaksi_id = time();
+
+        $model = NEW Mutasitabunganmodel();
+        $datamutasi = [
+            'id_nasabah' => $idnasabah,
+            'uraian' => $alamat,
+            'transaksi_id' => $transaksi_id,
+            'debet'=>$debet,
+            'photo_buku'=>$photo_bukti
+        ];
+
+        if($model->insert($datamutasi)){
+            return redirect('data-tabungan');
         }
     }
 }
