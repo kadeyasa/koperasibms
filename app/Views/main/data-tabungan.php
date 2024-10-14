@@ -369,7 +369,7 @@
 									<label class="required fs-6 fw-semibold mb-2">Saldo</label>
 									<!--end::Label-->
 									<!--begin::Input-->
-									<input type="text" class="form-control form-control-solid" placeholder="No HP" name="saldo" id="saldo"/>
+									<input type="text" class="form-control form-control-solid" placeholder="Saldo" name="saldo" id="saldo"/>
 									<!--end::Input-->
 								</div>
 								

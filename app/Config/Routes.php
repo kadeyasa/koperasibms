@@ -188,6 +188,7 @@ $routes->post('/simpankasharian', 'Laporan::simpankasharian',['filter' => 'auth'
 
 //tabungan 
 $routes->get('/data-tabungan', 'Tabungan::datatabungan',['filter' => 'auth']);
+$routes->post('/tambahnasabahtabungan', 'Tabungan::tambahnasabah',['filter' => 'auth']);
 
 //module kunjungawajib
 $routes->get('/kunjunganwajib', 'Kunjunganwajib::index',['filter' => 'auth']);
