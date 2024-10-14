@@ -201,6 +201,7 @@ class Tabungan extends BaseController
     function approvetabungan(){
         if (isset($_GET['id']) && !empty($_GET['id'])) {
             $model = NEW Mutasitabunganmodel();
+            $id = $_GET['id'];
             $check = $model->where('id',$id)->first();
             if($check['status']==0){
                 //check saldo
