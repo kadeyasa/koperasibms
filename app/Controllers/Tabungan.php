@@ -170,19 +170,10 @@ class Tabungan extends BaseController
         $validation = \Config\Services::validation();
         $validation->setRules([
             'idnasabah' => 'required',
-            'photo' => 'required',
+            //'photo' => 'required',
             'uraian' => 'required',
-            'debet' => 'required'
+            'kredit' => 'required'
         ]);
-
-
-        // Check validation
-        if (!$this->validate($validation->getRules())) {
-            return $this->response->setJSON([
-                'status' => 'error',
-                'message' => $validation->getErrors()
-            ]);
-        }
 
         $idnasabah = $this->request->getPost('idnasabah');
         $uraian = $this->request->getPost('uraian');
