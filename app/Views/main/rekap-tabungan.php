@@ -148,9 +148,7 @@
                                                                     <div class="card-toolbar">
                                                                         <!--begin::Toolbar-->
 																		<!--begin::Add customer-->
-																		<div class="d-flex align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Specify invoice date">
-																			<a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#kt_modal_add_customer">Tambah</a>&nbsp;&nbsp;
-																		</div>
+																		
 																		<!--end::Add customer-->
                                                                         <div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
 																			
@@ -179,7 +177,8 @@
 																			<!--end::Input group-->
 																			<!--begin::Input group-->
 																			<div class="d-flex align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Specify invoice date">
-																				<!--begin::Date-->
+                                                                                <input  name="keyword" placeholder="Masukan Nama Nasabah" class="form-control mb-2" value=""/>
+                                                                                <!--begin::Date-->
 																				<div class="fs-6 fw-bold text-gray-700 text-nowrap">Sampai Tanggal : &nbsp;</div>
 																				<!--end::Date-->
 																				<!--begin::Input-->
@@ -215,16 +214,7 @@
                                                                 <!--end::Card header-->
                                                                 <!--begin::Card body-->
                                                                 <div class="card-body pt-0">
-                                                                    <?php echo form_open('rekap-tabungan',array('method'=>'get'));?>
-                                                                    <div class="align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover">
-                                                                        <div class="fs-6 fw-bold text-gray-700 text-nowrap">Nama Nasabah: &nbsp;</div>
-                                                                        <div class="position-relative d-flex align-items-center w-300px">
-                                                                            <input  name="keyword" placeholder="Masukan Nama Nasabah" class="form-control mb-2" value=""/>
-                                                                            <button class="btn btn-primary">Cari</button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <hr/>
-                                                                    <?php echo form_close();?>
+                                                                    
 																	<div class="table-responsive">
 																		<!--begin::Table-->
 																		
