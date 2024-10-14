@@ -268,7 +268,7 @@
 																							<td><?php echo $status;?></td>
                                                                                             <td>
                                                                                                 <?php
-                                                                                                if(session('userlevel')==3){ 
+                                                                                                if(session('userlevel')==3 || session('userlevel')==6){ 
                                                                                                     if($row['status']==0){
                                                                                                         echo '<a href="#" class="btn btn-success" onclick="approvetabungan('.$row['id'].');">Approve</a>';
                                                                                                     }

@@ -176,6 +176,7 @@ class Tabungan extends BaseController
             $model->like('n.nama', $keyword);  // Use alias 'n' for tbnasabah_tabungan
         }
         $model->groupBy('s.id');
+        $model->orderBy('s.created_at');
         // Retrieve all matching records
         $results = $model->findAll();
         $data = array(
