@@ -290,11 +290,11 @@
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td colspan="5">Total Mutasi Pending</td>
-                                                                                        <td ><?php echo number_format($totalmutasi_pending);?></td>
+                                                                                        <td ><?php echo $totalmutasi_pending;?></td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td colspan="5">Total Mutasi Sukses</td>
-                                                                                        <td ><?php echo number_format($totalmutasi_sukses);?></td>
+                                                                                        <td ><?php echo $totalmutasi_sukses;?></td>
                                                                                     </tr>
                                                                                 </tfoot>
 																			</tbody>
