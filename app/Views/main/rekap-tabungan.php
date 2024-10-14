@@ -151,10 +151,10 @@
 																		
 																		<!--end::Add customer-->
                                                                         <div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
-																			
+                                                                        <input  name="keyword" placeholder="Masukan Nama Nasabah" class="form-control mb-2" value=""/>
 																			<!--begin::Input group-->
 																			<div class="d-flex align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Specify invoice date">
-                                                                                <input  name="keyword" placeholder="Masukan Nama Nasabah" class="form-control mb-2" value=""/>
+                                                                            
                                                                                 <!--begin::Date-->
 																				<div class="fs-6 fw-bold text-gray-700 text-nowrap">Dari Tanggal: &nbsp;</div>
 																				<!--end::Date-->
