@@ -196,7 +196,7 @@ class Tabungan extends BaseController
             'id_nasabah' => $idnasabah,
             'uraian' => $uraian,
             'transaksi_id' => $transaksi_id,
-            'kredit'=>$debet,
+            'kredit'=>$kredit,
             'photo_buku'=>''
         ];
         
