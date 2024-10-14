@@ -96,6 +96,7 @@ class Tabungan extends BaseController
     }
 
     function tambahtabungan(){
+        $upload = NEW Uploadkit();
         $validation = \Config\Services::validation();
         $validation->setRules([
             'idnasabah' => 'required',
