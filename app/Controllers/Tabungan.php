@@ -85,7 +85,21 @@ class Tabungan extends BaseController
                 'saldo'=>$saldo
             );
             if($modelsaldo->insert($data_saldo)){
-                return redirect('data-tabungan');
+                $model = NEW Mutasitabunganmodel();
+                $transaksi_id = time();
+                $datamutasi = [
+                    'id_nasabah' => $insertID,
+                    'uraian' => 'Saldo Awal',
+                    'transaksi_id' => $transaksi_id,
+                    'debet'=>$saldo,
+                    'photo_buku'=>'',
+                    'status'=>1
+                ];
+
+                if($model->insert($datamutasi)){
+                    return redirect('data-tabungan');
+                }
+                //return redirect('data-tabungan');
             }
         } else {
             return $this->response->setJSON([
@@ -147,5 +161,10 @@ class Tabungan extends BaseController
         if($model->insert($datamutasi)){
             return redirect('data-tabungan');
         }
+    }
+
+    function rekaptabungan(){
+        $model = NEW Mutasitabunganmodel();
+
     }
 }
