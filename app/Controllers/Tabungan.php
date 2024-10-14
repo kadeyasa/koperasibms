@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Libraries\Uploadkit;
 use App\Models\Tabunganmodel;
-use App\Models\Saldomodel;
+use App\Models\Nasabahtabunganmodel;
 
 class Tabungan extends BaseController
 {
@@ -42,7 +42,7 @@ class Tabungan extends BaseController
     }
 
     function tambahnasabah(){
-        $model = new Tabunganmodel();
+        $model = new Nasabahtabunganmodel();
         // Validation rules
         $validation = \Config\Services::validation();
         $validation->setRules([
@@ -76,7 +76,7 @@ class Tabungan extends BaseController
 
         if ($model->insert($datanasabah)) {
             //get insert id 
-            $modelsaldo = NEW Saldomodel();
+            $modelsaldo = NEW Tabunganmodel();
 
             $insertID = $model->insertID();
             $data_saldo = array(
