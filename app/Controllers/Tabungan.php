@@ -313,7 +313,7 @@ class Tabungan extends BaseController
         );
         
     	if(session('userlevel')!=0){
-            return view('main/rekap-tabungan',$data);
+            return view('main/rekap-penarikan',$data);
         }else{
             return view('member/profile',$data);
         }
