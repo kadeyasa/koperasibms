@@ -214,7 +214,7 @@
 																							<td><?php echo $row['no_hp'];?></td>
                                                                                             <td><?php echo number_format($row['saldo']);?></td>
 																							<td>
-                                                                                                <a href="javascript:tambahtabungan(<?php echo $row['id'];?>);" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-tambah-tabungan">Tambah Tabungan</a>
+                                                                                                <a onclick="tambahtabungan(<?php echo $row['id'];?>);" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-tambah-tabungan">Tambah Tabungan</a>
                                                                                             </td>
 																						</tr>
 																						<?php
@@ -429,7 +429,7 @@
 									<label class="required fs-6 fw-semibold mb-2">ID Nasabah</label>
 									<!--end::Label-->
 									<!--begin::Input-->
-									<input type="text" class="form-control form-control-solid" placeholder="ID nasabah" name="idnasabah" value=""  id="idnasabahsearc"/>
+									<input type="text" class="form-control form-control-solid" placeholder="ID nasabah" name="idnasabah" value=""  id="idnasabahsearch"/>
 									<!--end::Input-->
 								</div>
                                 <div class="fv-row mb-7">
@@ -499,7 +499,8 @@
         <script src="assets/js/custom/apps/ecommerce/customers/listing/listing-setupbiaya.js"></script>
         <script>
             function tambahtabungan(id){
-                $('#idnasabahsearc').val(id);
+                alert(id);
+                $('#idnasabahsearch').val(id);
             }
             // WebcamJS initialization
             Webcam.set({
