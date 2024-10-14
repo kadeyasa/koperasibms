@@ -495,7 +495,7 @@
 				<!--begin::Modal content-->
 				<div class="modal-content">
 					<!--begin::Form-->
-					<form class="form" method="post" action="<?php echo site_url('tariktabungan');?>" id="kt_modal_add_customer_form" data-kt-redirect="<?php echo site_url('anggota');?>">
+					<form class="form" method="post" action="<?php echo site_url('tariktabungannasabah');?>" id="kt_modal_add_customer_form" data-kt-redirect="<?php echo site_url('anggota');?>">
 						
                         <!--begin::Modal header-->
 						<div class="modal-header" id="kt_modal_add_customer_header">
@@ -543,7 +543,7 @@
 									<label class="required fs-6 fw-semibold mb-2">Kredit</label>
 									<!--end::Label-->
 									<!--begin::Input-->
-									<input type="text" class="form-control form-control-solid" placeholder="Debet" name="kredit" value=""  id="kredit"/>
+									<input type="text" class="form-control form-control-solid" placeholder="Kredit" name="kredit" value=""  id="kredit"/>
 									<!--end::Input-->
 								</div>
 								
