@@ -28,7 +28,7 @@ class Tabungan extends BaseController
             // Apply 'like' condition for nasabah's name if keyword is present
             $model->like('n.nama', $keyword);  // Use alias 'n' for tbnasabah_tabungan
         }
-
+        $model->groupBy('n.id');
         // Retrieve all matching records
         $results = $model->findAll();
 
@@ -175,7 +175,7 @@ class Tabungan extends BaseController
             // Apply 'like' condition for nasabah's name if keyword is present
             $model->like('n.nama', $keyword);  // Use alias 'n' for tbnasabah_tabungan
         }
-
+        $model->groupBy('s.id');
         // Retrieve all matching records
         $results = $model->findAll();
         $data = array(
