@@ -33,7 +33,14 @@ class Mutasitabunganmodel extends Model
     }
 
     function gettotalmutasi($start,$end,$status){
-        $sql = "SELECT sum(debet) AS totalmutasi FROM `tb_mutasi_tabungan` WHERE uraian<> 'Saldo Awal' AND created_at >='$start' AND created_at<='$end' AND status='$status'";
+        $sql = "SELECT sum(debet) AS totalmutasi FROM `tb_mutasi_tabungan` WHERE uraian<> 'Saldo Awal' AND created_at >='$start' AND created_at<='$end' AND status='$status' AND debet>0";
+        $query = $this->db->query($sql);
+        $row = $query->getRow();
+        return $row;
+    }
+
+    function gettotalmutasikredit($start,$end,$status){
+        $sql = "SELECT sum(debet) AS totalmutasi FROM `tb_mutasi_tabungan` WHERE uraian<> 'Saldo Awal' AND created_at >='$start' AND created_at<='$end' AND status='$status' AND kredit>0";
         $query = $this->db->query($sql);
         $row = $query->getRow();
         return $row;

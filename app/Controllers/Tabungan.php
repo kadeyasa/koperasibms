@@ -184,7 +184,6 @@ class Tabungan extends BaseController
             $end = date('Y-m-d').' 23:59:59';
         }
 
-
         if($model->gettotalmutasi($start,$end,0)){
             $totalmutasi_pending = $model->gettotalmutasi($start,$end,0)->totalmutasi;
         }else{
@@ -201,6 +200,8 @@ class Tabungan extends BaseController
         $model->where('s.created_at >=', $start);  // Use alias 'n' for tbnasabah_tabungan
         $model->where('s.created_at <=', $end);
 
+        $model->where('s.debet >', 0);
+
         $model->groupBy('s.id');
         $model->orderBy('s.created_at','DESC');
         // Retrieve all matching records
@@ -211,6 +212,64 @@ class Tabungan extends BaseController
             'totalmutasi_pending'=>$totalmutasi_pending,
             'totalmutasi_sukses'=>$totalmutasi_sukses	
         );
+
+    	if(session('userlevel')!=0){
+            return view('main/rekap-tabungan',$data);
+        }else{
+            return view('member/profile',$data);
+        }
+    }
+
+    function rekapwithdraw(){
+        $model = NEW Mutasitabunganmodel();
+        $model->select("s.*, n.no_rekening,n.nama,n.alamat")
+            ->from("tb_mutasi_tabungan as s")  // Alias for tb_saldo_tabungan
+            ->join('tbnasabah_tabungan as n', 'n.id = s.id_nasabah','left');  // Alias for tbnasabah_tabungan
+
+        // Check if a keyword is set and not empty
+        if (isset($_GET['keyword']) && !empty($_GET['keyword'])) {
+            $keyword = $_GET['keyword'];
+            // Apply 'like' condition for nasabah's name if keyword is present
+            $model->like('n.nama', $keyword);  // Use alias 'n' for tbnasabah_tabungan
+        }
+
+        if (isset($_GET['start']) && !empty($_GET['start'])) {
+            $start = $_GET['start'].' 00:00:00';
+            $end = $_GET['end'].' 23:59:59';
+        }else{
+            $start = date('Y-m-d').' 00:00:00';
+            $end = date('Y-m-d').' 23:59:59';
+        }
+
+        if($model->gettotalmutasi($start,$end,0)){
+            $totalmutasi_pending = $model->gettotalmutasikredit($start,$end,0)->totalmutasi;
+        }else{
+            $totalmutasi_pending = 0;
+        }
+        if($model->gettotalmutasi($start,$end,1)){
+            $totalmutasi_sukses = $model->gettotalmutasikredit($start,$end,1)->totalmutasi;
+        }else{
+            $totalmutasi_sukses = 0;
+        }
+
+        $totalsaldoawal = $model->getsaldoawal()->totalsaldoawal;
+        // Apply 'like' condition for nasabah's name if keyword is present
+        $model->where('s.created_at >=', $start);  // Use alias 'n' for tbnasabah_tabungan
+        $model->where('s.created_at <=', $end);
+
+        $model->where('s.kredit >', 0);
+
+        $model->groupBy('s.id');
+        $model->orderBy('s.created_at','DESC');
+        // Retrieve all matching records
+        $results = $model->findAll();
+        $data = array(
+            'results'=>$results,
+            'totalsaldoawal'=>$totalsaldoawal,
+            'totalmutasi_pending'=>$totalmutasi_pending,
+            'totalmutasi_sukses'=>$totalmutasi_sukses	
+        );
+        
     	if(session('userlevel')!=0){
             return view('main/rekap-tabungan',$data);
         }else{
