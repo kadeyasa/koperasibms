@@ -353,4 +353,39 @@ class Tabungan extends BaseController
             
         }
     }
+
+    function approvepenarikan(){
+        if (isset($_GET['id']) && !empty($_GET['id'])) {
+            $model = NEW Mutasitabunganmodel();
+            $id = $_GET['id'];
+            $check = $model->where('id',$id)->first();
+            if($check['status']==0){
+                //check saldo
+                $saldomodel = NEW Tabunganmodel();
+                $check_saldo = $saldomodel->where('id_nasabah',$check['id_nasabah'])->first();
+                $new_saldo = $check_saldo['saldo']-$check['kredit'];
+                $dataupdate = array(
+                    'saldo'=>$new_saldo
+                );
+                if($saldomodel->update($check_saldo['id'],$dataupdate)){
+                    //set status 
+                    $datamutasi=array(
+                        'status'=>1
+                    );
+                    $model->update($check['id'],$datamutasi);
+                    return redirect('rekap-tabungan');
+                }
+            }else{
+                
+                session()->setFlashdata('error','Penarikan sudah di approve');
+                return redirect()->back();
+               
+            }
+        }else{
+            
+            session()->setFlashdata('error','Invalid ID');
+            return redirect()->back();
+            
+        }
+    }
 }

@@ -215,8 +215,10 @@
                                                                                             <td><?php echo number_format($row['saldo']);?></td>
 																							<td>
                                                                                                 <a onclick="tambahtabungan(<?php echo $row['id'];?>);" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-tambah-tabungan">Tambah Tabungan</a>
-                                                                                                <a onclick="tambahpenarikan(<?php echo $row['id'];?>);" href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-tambah-penarikan">Tarik</a>
-                                                                                            </td>
+                                                                                                <?php if(session('userlevel')==3 || session('userlevel')==6){?>
+                                                                                                    <a onclick="tambahpenarikan(<?php echo $row['id'];?>);" href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-tambah-penarikan">Tarik</a>
+                                                                                                <?php }?>
+                                                                                                </td>
 																						</tr>
 																						<?php
 																					} 

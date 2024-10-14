@@ -275,10 +275,7 @@
                                                                                     <tr>
                                                                                         <td colspan="12"><hr/></td>
                                                                                     </tr>
-                                                                                    <tr>
-                                                                                        <td colspan="5">Total Saldo Awal</td>
-                                                                                        <td ><?php echo number_format($totalsaldoawal);?></td>
-                                                                                    </tr>
+                                                                                    
                                                                                     <tr>
                                                                                         <td colspan="5">Total Mutasi Pending</td>
                                                                                         <td ><?php echo $totalmutasi_pending;?></td>

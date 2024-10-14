@@ -195,6 +195,7 @@ $routes->post('/tariktabungannasabah', 'Tabungan::tariktabungan',['filter' => 'a
 $routes->get('/rekap-tabungan', 'Tabungan::rekaptabungan',['filter' => 'auth']);
 $routes->get('/rekap-penarikan', 'Tabungan::rekapwithdraw',['filter' => 'auth']);
 $routes->get('/approvetabungan', 'Tabungan::approvetabungan',['filter' => 'auth']);
+$routes->get('/approvepenarikan', 'Tabungan::approvepenarikan',['filter' => 'auth']);
 //module kunjungawajib
 $routes->get('/kunjunganwajib', 'Kunjunganwajib::index',['filter' => 'auth']);
 $routes->get('/carianggotawajib', 'Kunjunganwajib::carianggota',['filter' => 'auth']);
