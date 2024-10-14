@@ -144,7 +144,7 @@
                                                                     </div>
                                                                     <!--begin::Card title-->
                                                                     <!--begin::Card toolbar-->
-																	<?php echo form_open('data-tabungan',array('method'=>'get'));?>
+																	
                                                                     <div class="card-toolbar">
                                                                         <!--begin::Toolbar-->
 																		<!--begin::Add customer-->
@@ -154,37 +154,29 @@
 																		<!--end::Add customer-->
                                                                     </div>
                                                                     <!--end::Card toolbar-->
-																	<?php echo form_close();?>
+																	
                                                                 </div>
                                                                 <!--end::Card header-->
                                                                 <!--begin::Card body-->
                                                                 <div class="card-body pt-0">
-                                                                    <div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
-                                                                        <!--begin::Filter-->
+                                                                    <div class="justify-content-end" data-kt-customer-table-toolbar="base">
                                                                         
-                                                                        <!--end::Filter-->
-                                                                        <!--begin::Input group-->
+                                                                        <?php echo form_open('data-tabungan',array('method'=>'get'));?>
+                                                                        
                                                                         <div class="align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Specify invoice date">
-                                                                            <!--begin::Date-->
+                                                                            
                                                                             <div class="fs-6 fw-bold text-gray-700 text-nowrap">Nama Nasabah: &nbsp;</div>
-                                                                            <!--end::Date-->
-                                                                            <!--begin::Input-->
+                                                                            
                                                                             <div class="position-relative d-flex align-items-center w-300px">
                                                                                 
                                                                                 <input  name="keyword" placeholder="Masukan Nama Nasabah" class="form-control mb-2" value=""/>
-                                                                                
+                                                                                <button class="btn btn-primary">Lihat Data</button>
                                                                             </div>
-                                                                            <!--end::Input-->
+                                                                            
                                                                         </div>
-                                                                        <!--end::Input group-->
-                                                                        <!--end::Input group-->
-                                                                        <!--begin::Input group-->
-                                                                        <div class="align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Specify invoice date">
-                                                                            <button class="btn btn-primary">Lihat Data</button>&nbsp;&nbsp;
-                                                                        </div>
-                                                                        <!--end::Input group-->
+                                                                        <?php echo form_close();?>
                                                                     </div>
-                                                                    <!--end::Toolbar-->
+                                                                    
 																	<div class="table-responsive">
 																		<!--begin::Table-->
 																		<h3>Data Kunjungan Wajib</h3>
@@ -437,7 +429,7 @@
 									<label class="required fs-6 fw-semibold mb-2">ID Nasabah</label>
 									<!--end::Label-->
 									<!--begin::Input-->
-									<input type="text" class="form-control form-control-solid" placeholder="ID nasabah" name="idnasabah" value=""  id="idnasabah"/>
+									<input type="text" class="form-control form-control-solid" placeholder="ID nasabah" name="idnasabah" value=""  id="idnasabahsearc"/>
 									<!--end::Input-->
 								</div>
                                 <div class="fv-row mb-7">
@@ -507,7 +499,7 @@
         <script src="assets/js/custom/apps/ecommerce/customers/listing/listing-setupbiaya.js"></script>
         <script>
             function tambahtabungan(id){
-                $('#idnasabah').val(id);
+                $('#idnasabahsearc').val(id);
             }
             // WebcamJS initialization
             Webcam.set({
