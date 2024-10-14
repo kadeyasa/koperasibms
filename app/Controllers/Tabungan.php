@@ -177,8 +177,8 @@ class Tabungan extends BaseController
         }
 
         if (isset($_GET['start']) && !empty($_GET['start'])) {
-            $start = $_GET['start'];
-            $end = $_GET['end'];
+            $start = $_GET['start'].' 00:00:00';
+            $end = $_GET['end'].' 23:59:59';
             // Apply 'like' condition for nasabah's name if keyword is present
             $model->where('s.created_at >=', $start);  // Use alias 'n' for tbnasabah_tabungan
             $model->where('s.created_at <=', $end);
