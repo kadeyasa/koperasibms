@@ -345,7 +345,7 @@
 									<label class="required fs-6 fw-semibold mb-2">Nama</label>
 									<!--end::Label-->
 									<!--begin::Input-->
-									<input type="text" class="form-control form-control-solid" placeholder="Nama" name="nama" value=""  id="nama" readonly/>
+									<input type="text" class="form-control form-control-solid" placeholder="Nama" name="nama" value=""  id="nama"/>
 									<!--end::Input-->
 								</div>
 								<div class="fv-row mb-7">
@@ -353,7 +353,7 @@
 									<label class="required fs-6 fw-semibold mb-2">Alamat</label>
 									<!--end::Label-->
 									<!--begin::Input-->
-									<input type="text" class="form-control form-control-solid" placeholder="Nama" name="alamat" value=""  id="alamat" readonly/>
+									<input type="text" class="form-control form-control-solid" placeholder="Nama" name="alamat" value=""  id="alamat"/>
 									<!--end::Input-->
 								</div>
 								<div class="fv-row mb-7">
