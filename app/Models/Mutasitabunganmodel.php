@@ -25,4 +25,17 @@ class Mutasitabunganmodel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
+    function getsaldoawal(){
+        $sql = "SELECT sum(debet) AS totalsaldoawal FROM `tb_mutasi_tabungan` WHERE uraian='Saldo Awal'";
+        $query = $this->db->query($sql);
+        $row = $query->getRow();
+        return $row;
+    }
+
+    function gettotalmutasi($start,$end,$status=0){
+        $sql = "SELECT sum(debet) AS totalmutasi FROM `tb_mutasi_tabungan` WHERE uraian<> 'Saldo Awal' AND created_at >='$start' AND created_at<='$end'";
+        $query = $this->db->query($sql);
+        $row = $query->getRow();
+        return $row;
+    }
 }

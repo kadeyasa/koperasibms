@@ -280,6 +280,20 @@
 																						<?php
 																					} 
 																				?>
+                                                                                <tfoot>
+                                                                                    <tr>
+                                                                                        <td colspan="5">Total Saldo Awal</td>
+                                                                                        <td ><?php echo number_format($totalsaldoawal);?></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="5">Total Mutasi Pending</td>
+                                                                                        <td ><?php echo number_format($totalmutasi_pending);?></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="5">Total Mutasi Sukses</td>
+                                                                                        <td ><?php echo number_format($totalmutasi_sukses);?></td>
+                                                                                    </tr>
+                                                                                </tfoot>
 																			</tbody>
 																			<!--end::Table body-->
 																		</table>

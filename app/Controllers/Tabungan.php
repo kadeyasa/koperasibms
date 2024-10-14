@@ -182,14 +182,25 @@ class Tabungan extends BaseController
             // Apply 'like' condition for nasabah's name if keyword is present
             $model->where('s.created_at >=', $start);  // Use alias 'n' for tbnasabah_tabungan
             $model->where('s.created_at <=', $end);
+
+            $totalmutasi_pending = $model->gettotalmutasi($start,$end,0)->totalmutasi;
+            $totalmutasi_sukses = $model->gettotalmutasi($start,$end,1)->totalmutasi;
+        }else{
+            $totalmutasi_pending =0;
+            $totalmutasi_sukses = 0;
         }
+
+        $totalsaldoawal = $model->getsaldoawal()->totalsaldoawal;
 
         $model->groupBy('s.id');
         $model->orderBy('s.created_at','DESC');
         // Retrieve all matching records
         $results = $model->findAll();
         $data = array(
-            'results'=>$results	
+            'results'=>$results,
+            'totalsaldoawal'=>$totalsaldoawal,
+            'totalmutasi_pending'=>$totalmutasi_pending,
+            'totalmutasi_sukses'=>$totalmutasi_sukses	
         );
     	if(session('userlevel')!=0){
             return view('main/rekap-tabungan',$data);
