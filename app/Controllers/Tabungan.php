@@ -26,7 +26,7 @@ class Tabungan extends BaseController
         if (isset($_GET['keyword']) && !empty($_GET['keyword'])) {
             $keyword = $_GET['keyword'];
             // Apply 'like' condition for nasabah's name if keyword is present
-            $model->where_like('n.nama', $keyword);  // Use alias 'n' for tbnasabah_tabungan
+            $model->like('n.nama', $keyword);  // Use alias 'n' for tbnasabah_tabungan
         }
 
         // Retrieve all matching records
@@ -94,7 +94,7 @@ class Tabungan extends BaseController
             ]);
         }
     }
-    
+
     function tambahtabungan(){
         $validation = \Config\Services::validation();
         $validation->setRules([

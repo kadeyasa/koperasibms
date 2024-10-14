@@ -170,13 +170,13 @@
                                                                             <div class="position-relative d-flex align-items-center w-300px">
                                                                                 
                                                                                 <input  name="keyword" placeholder="Masukan Nama Nasabah" class="form-control mb-2" value=""/>
-                                                                                <button class="btn btn-primary">Lihat Data</button>
+                                                                                <button class="btn btn-primary">Cari</button>
                                                                             </div>
                                                                             
                                                                         </div>
                                                                         <?php echo form_close();?>
                                                                     </div>
-                                                                    
+                                                                    <hr/>
 																	<div class="table-responsive">
 																		<!--begin::Table-->
 																		<h3>Data Kunjungan Wajib</h3>
@@ -499,7 +499,7 @@
         <script src="assets/js/custom/apps/ecommerce/customers/listing/listing-setupbiaya.js"></script>
         <script>
             function tambahtabungan(id){
-                alert(id);
+                //alert(id);
                 $('#idnasabahsearch').val(id);
             }
             // WebcamJS initialization
