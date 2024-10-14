@@ -224,7 +224,7 @@
 																							<td><?php echo $row['no_hp'];?></td>
                                                                                             <td><?php echo number_format($row['saldo']);?></td>
 																							<td>
-                                                                                                <a href="tambahtabungan(<?php echo $row['id'];?>);" class="btn btn-default">Tambah Tabungan</a>
+                                                                                                <a href="javascript:tambahtabungan(<?php echo $row['id'];?>);" class="btn btn-primary">Tambah Tabungan</a>
                                                                                             </td>
 																						</tr>
 																						<?php
@@ -508,6 +508,10 @@
         <script src="assets/js/custom/apps/ecommerce/customers/listing/add-setupbiaya.js"></script>
         <script src="assets/js/custom/apps/ecommerce/customers/listing/listing-setupbiaya.js"></script>
         <script>
+            function tambahtabungan(id){
+                $('#modal-tambah-tabungan').show();
+                $('#idnasabah').val(id);
+            }
             // WebcamJS initialization
             Webcam.set({
 				width: 250,
