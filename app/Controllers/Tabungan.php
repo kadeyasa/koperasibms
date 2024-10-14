@@ -163,6 +163,57 @@ class Tabungan extends BaseController
         }
     }
 
+    function tariktabungan(){
+        $modelsaldo = NEW Tabunganmodel();
+
+        $upload = NEW Uploadkit();
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'idnasabah' => 'required',
+            'photo' => 'required',
+            'uraian' => 'required',
+            'debet' => 'required'
+        ]);
+
+
+        // Check validation
+        if (!$this->validate($validation->getRules())) {
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => $validation->getErrors()
+            ]);
+        }
+
+        $idnasabah = $this->request->getPost('idnasabah');
+        $uraian = $this->request->getPost('uraian');
+        $kredit = $this->request->getPost('kredit');
+        //check saldo nasabah 
+        $checksaldo = $modelsaldo->where('id_nasabah',$idnasabah)->first();
+        if($checksaldo){
+            if($checksaldo['saldo']<$kredit){
+                session()->setFlashdata('error','Saldo Tabungan tidak cukup');
+                return redirect('data-tabungan');
+            }
+        }else{
+            session()->setFlashdata('error','Saldo Tabungan tidak cukup');
+            return redirect('data-tabungan');
+        }
+        $transaksi_id = time();
+
+        $model = NEW Mutasitabunganmodel();
+        $datamutasi = [
+            'id_nasabah' => $idnasabah,
+            'uraian' => $uraian,
+            'transaksi_id' => $transaksi_id,
+            'kredit'=>$debet,
+            'photo_buku'=>''
+        ];
+        
+        if($model->insert($datamutasi)){
+            return redirect('data-tabungan');
+        }
+    }
+
     function rekaptabungan(){
         $model = NEW Mutasitabunganmodel();
         $model->select("s.*, n.no_rekening,n.nama,n.alamat")

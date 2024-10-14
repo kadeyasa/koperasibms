@@ -215,6 +215,7 @@
                                                                                             <td><?php echo number_format($row['saldo']);?></td>
 																							<td>
                                                                                                 <a onclick="tambahtabungan(<?php echo $row['id'];?>);" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-tambah-tabungan">Tambah Tabungan</a>
+                                                                                                <a onclick="tambahpenarikan(<?php echo $row['id'];?>);" href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-tambah-penarikan">Tarik</a>
                                                                                             </td>
 																						</tr>
 																						<?php
@@ -486,6 +487,90 @@
 			</div>
 		</div>
 		<!--end::Modal - Customers - Add-->
+
+        <!--begin::Modal - Customers - Add-->
+		<div class="modal fade" id="modal-tambah-penarikan" tabindex="-1" aria-hidden="true">
+			<!--begin::Modal dialog-->
+			<div class="modal-dialog modal-dialog-centered mw-650px">
+				<!--begin::Modal content-->
+				<div class="modal-content">
+					<!--begin::Form-->
+					<form class="form" method="post" action="<?php echo site_url('tariktabungan');?>" id="kt_modal_add_customer_form" data-kt-redirect="<?php echo site_url('anggota');?>">
+						
+                        <!--begin::Modal header-->
+						<div class="modal-header" id="kt_modal_add_customer_header">
+							<!--begin::Modal title-->
+							<h2 class="fw-bold">Tarik Tabungan</h2>
+							<!--end::Modal title-->
+							<!--begin::Close-->
+							<div id="kt_modal_add_customer_close" class="btn btn-icon btn-sm btn-active-icon-primary">
+								<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+								<span class="svg-icon svg-icon-1">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
+										<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
+									</svg>
+								</span>
+								<!--end::Svg Icon-->
+							</div>
+							<!--end::Close-->
+						</div>
+						<!--end::Modal header-->
+						<!--begin::Modal body-->
+						
+						<div class="modal-body py-10 px-lg-17">
+							<!--begin::Scroll-->
+							<div class="scroll-y me-n7 pe-7" id="kt_modal_add_customer_scroll" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_modal_add_customer_header" data-kt-scroll-wrappers="#kt_modal_add_customer_scroll" data-kt-scroll-offset="300px">
+								<!--begin::Input group-->
+								<div class="fv-row mb-7">
+									<!--begin::Label-->
+									<label class="required fs-6 fw-semibold mb-2">ID Nasabah</label>
+									<!--end::Label-->
+									<!--begin::Input-->
+									<input type="text" class="form-control form-control-solid" placeholder="ID nasabah" name="idnasabah" value=""  id="idnasabahtarik"/>
+									<!--end::Input-->
+								</div>
+                                <div class="fv-row mb-7">
+									<!--begin::Label-->
+									<label class="required fs-6 fw-semibold mb-2">Uraian</label>
+									<!--end::Label-->
+									<!--begin::Input-->
+									<input type="text" class="form-control form-control-solid" placeholder="Uraian" name="uraian" value="Penarikan Tgl <?php echo date('d-m-Y');?>"  id="uraian"/>
+									<!--end::Input-->
+								</div>
+                                <div class="fv-row mb-7">
+									<!--begin::Label-->
+									<label class="required fs-6 fw-semibold mb-2">Kredit</label>
+									<!--end::Label-->
+									<!--begin::Input-->
+									<input type="text" class="form-control form-control-solid" placeholder="Debet" name="kredit" value=""  id="kredit"/>
+									<!--end::Input-->
+								</div>
+								
+							</div>
+							<!--end::Scroll-->
+						</div>
+						<!--end::Modal body-->
+						<!--begin::Modal footer-->
+						<div class="modal-footer flex-center">
+							<!--begin::Button-->
+							<input type="hidden" name="id" id="id_data" value="">
+							<button type="reset" id="kt_modal_add_customer_cancel" class="btn btn-light me-3">Discard</button>
+							<!--end::Button-->
+							<!--begin::Button-->
+							<button type="submit" class="btn btn-primary">
+								<span class="indicator-label">Submit</span>
+								
+							</button>
+							<!--end::Button-->
+						</div>
+						<!--end::Modal footer-->
+					</form>
+					<!--end::Form-->
+				</div>
+			</div>
+		</div>
+		<!--end::Modal - Customers - Add-->
         
 		<script>var hostUrl = "assets/";</script>
 		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
@@ -501,6 +586,10 @@
             function tambahtabungan(id){
                 //alert(id);
                 $('#idnasabahsearch').val(id);
+            }
+
+            function tambahpenarikan(id){
+                $('#idnasabahtarik').val(id);
             }
             // WebcamJS initialization
             Webcam.set({
