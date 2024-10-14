@@ -264,7 +264,7 @@
 																							<td><?php echo $row['nama'];?></td>
 																							<td><?php echo $row['alamat'];?></td>
 																							<td><?php echo $row['debet'];?></td>
-																							<td><a href="<?php echo $row['photo'];?>" target="__blank"><img src="<?php echo $row['photo'];?>" width="200"></a></td>
+																							<td><a href="<?php echo $row['photo_buku'];?>" target="__blank"><img src="<?php echo $row['photo_buku'];?>" width="200"></a></td>
 																							<td><?php echo $status;?></td>
                                                                                             <td>
                                                                                                 <?php
