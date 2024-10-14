@@ -152,34 +152,6 @@
 																			<a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#kt_modal_add_customer">Tambah</a>&nbsp;&nbsp;
 																		</div>
 																		<!--end::Add customer-->
-                                                                        <div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
-																			
-                                                                            <!--begin::Filter-->
-                                                                            
-                                                                            <!--end::Filter-->
-																			<!--begin::Input group-->
-																			<div class="d-flex align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Specify invoice date">
-																				<!--begin::Date-->
-																				<div class="fs-6 fw-bold text-gray-700 text-nowrap">Nama Nasabah: &nbsp;</div>
-																				<!--end::Date-->
-																				<!--begin::Input-->
-																				<div class="position-relative d-flex align-items-center w-300px">
-																					
-																					<input  name="keyword" placeholder="Masukan Nama Nasabah" class="form-control mb-2" value=""/>
-																					
-																				</div>
-																				<!--end::Input-->
-																			</div>
-																			<!--end::Input group-->
-																			<!--end::Input group-->
-																			<!--begin::Input group-->
-																			<div class="d-flex align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Specify invoice date">
-																				<button class="btn btn-primary">Lihat Data</button>&nbsp;&nbsp;
-																			</div>
-																			<!--end::Input group-->
-                                                                        </div>
-                                                                        <!--end::Toolbar-->
-                                                                        
                                                                     </div>
                                                                     <!--end::Card toolbar-->
 																	<?php echo form_close();?>
@@ -187,6 +159,32 @@
                                                                 <!--end::Card header-->
                                                                 <!--begin::Card body-->
                                                                 <div class="card-body pt-0">
+                                                                    <div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
+                                                                        <!--begin::Filter-->
+                                                                        
+                                                                        <!--end::Filter-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Specify invoice date">
+                                                                            <!--begin::Date-->
+                                                                            <div class="fs-6 fw-bold text-gray-700 text-nowrap">Nama Nasabah: &nbsp;</div>
+                                                                            <!--end::Date-->
+                                                                            <!--begin::Input-->
+                                                                            <div class="position-relative d-flex align-items-center w-300px">
+                                                                                
+                                                                                <input  name="keyword" placeholder="Masukan Nama Nasabah" class="form-control mb-2" value=""/>
+                                                                                
+                                                                            </div>
+                                                                            <!--end::Input-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                        <!--end::Input group-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Specify invoice date">
+                                                                            <button class="btn btn-primary">Lihat Data</button>&nbsp;&nbsp;
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                    </div>
+                                                                    <!--end::Toolbar-->
 																	<div class="table-responsive">
 																		<!--begin::Table-->
 																		<h3>Data Kunjungan Wajib</h3>
@@ -224,7 +222,7 @@
 																							<td><?php echo $row['no_hp'];?></td>
                                                                                             <td><?php echo number_format($row['saldo']);?></td>
 																							<td>
-                                                                                                <a href="javascript:tambahtabungan(<?php echo $row['id'];?>);" class="btn btn-primary">Tambah Tabungan</a>
+                                                                                                <a href="javascript:tambahtabungan(<?php echo $row['id'];?>);" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-tambah-tabungan">Tambah Tabungan</a>
                                                                                             </td>
 																						</tr>
 																						<?php
@@ -509,7 +507,6 @@
         <script src="assets/js/custom/apps/ecommerce/customers/listing/listing-setupbiaya.js"></script>
         <script>
             function tambahtabungan(id){
-                $('#modal-tambah-tabungan').show();
                 $('#idnasabah').val(id);
             }
             // WebcamJS initialization
