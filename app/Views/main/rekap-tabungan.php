@@ -227,6 +227,15 @@
                                                                 <!--end::Card header-->
                                                                 <!--begin::Card body-->
                                                                 <div class="card-body pt-0">
+                                                                    <?php echo form_open('rekap-tabungan',array('method'=>'get'));?>
+                                                                    <div class="align-items-center flex-equal fw-row me-4 order-2" data-bs-toggle="tooltip" data-bs-trigger="hover">
+                                                                        <div class="fs-6 fw-bold text-gray-700 text-nowrap">Nama Nasabah: &nbsp;</div>
+                                                                        <div class="position-relative d-flex align-items-center w-300px">
+                                                                            <input  name="keyword" placeholder="Masukan Nama Nasabah" class="form-control mb-2" value=""/>
+                                                                            <button class="btn btn-primary">Cari</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <?php echo form_close();?>
 																	<div class="table-responsive">
 																		<!--begin::Table-->
 																		<h3>Data Kunjungan Wajib</h3>
@@ -254,18 +263,30 @@
 																			<tbody class="fw-semibold text-gray-600">
 																				<?php
 																					foreach($results as $row){
+                                                                                        if($row['status']=0){
+                                                                                            $status ='Pending';
+                                                                                        }else{
+                                                                                            $status = 'Approved';
+                                                                                        }
 																						?>
 																						<tr>
 																							<td>#</td>
-																							<td><?php echo $row->no_rek;?></td>
-																							<td><?php echo $row->nama;?></td>
-																							<td><?php echo $row->alamat;?></td>
-																							<td><?php echo $row->location;?></td>
-																							<td><?php echo $row->keterangan;?></td>
-																							<td><a href="<?php echo $row->photo;?>" target="__blank"><img src="<?php echo $row->photo;?>" width="200"></a></td>
-																							<td><?php echo $row->follwup_date;?></td>
-                                                                                            <td><?php echo $row->tgl_janji;?></td>
-																							<td><?php echo $row->status;?></td>
+																							<td><?php echo $row['created_at'];?></td>
+																							<td><?php echo $row['no_rekening'];?></td>
+																							<td><?php echo $row['nama'];?></td>
+																							<td><?php echo $row['alamat'];?></td>
+																							<td><?php echo $row['debet'];?></td>
+																							<td><a href="<?php echo $row['photo'];?>" target="__blank"><img src="<?php echo $row['photo'];?>" width="200"></a></td>
+																							<td><?php echo $status;?></td>
+                                                                                            <td>
+                                                                                                <?php
+                                                                                                if(session('userlevel')==3){ 
+                                                                                                    if($row['status']==0){
+                                                                                                        echo '<a href="#" class="btn btn-success" onclick="approvetabungan('.$row['id'].');">Approve</a>';
+                                                                                                    }
+                                                                                                }
+                                                                                                ?>
+                                                                                            </td>
 																						</tr>
 																						<?php
 																					} 
