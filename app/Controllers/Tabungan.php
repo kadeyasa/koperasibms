@@ -179,26 +179,27 @@ class Tabungan extends BaseController
         if (isset($_GET['start']) && !empty($_GET['start'])) {
             $start = $_GET['start'].' 00:00:00';
             $end = $_GET['end'].' 23:59:59';
-            // Apply 'like' condition for nasabah's name if keyword is present
-            $model->where('s.created_at >=', $start);  // Use alias 'n' for tbnasabah_tabungan
-            $model->where('s.created_at <=', $end);
-            if($model->gettotalmutasi($start,$end,0)){
-                $totalmutasi_pending = $model->gettotalmutasi($start,$end,0)->totalmutasi;
-            }else{
-                $totalmutasi_pending = 0;
-            }
-            if($model->gettotalmutasi($start,$end,1)){
-                $totalmutasi_sukses = $model->gettotalmutasi($start,$end,1)->totalmutasi;
-            }else{
-                $totalmutasi_sukses = 0;
-            }
-            
         }else{
-            $totalmutasi_pending =0;
+            $start = date('Y-m-d').' 00:00:00';
+            $end = date('Y-m-d').' 23:59:59';
+        }
+
+
+        if($model->gettotalmutasi($start,$end,0)){
+            $totalmutasi_pending = $model->gettotalmutasi($start,$end,0)->totalmutasi;
+        }else{
+            $totalmutasi_pending = 0;
+        }
+        if($model->gettotalmutasi($start,$end,1)){
+            $totalmutasi_sukses = $model->gettotalmutasi($start,$end,1)->totalmutasi;
+        }else{
             $totalmutasi_sukses = 0;
         }
 
         $totalsaldoawal = $model->getsaldoawal()->totalsaldoawal;
+        // Apply 'like' condition for nasabah's name if keyword is present
+        $model->where('s.created_at >=', $start);  // Use alias 'n' for tbnasabah_tabungan
+        $model->where('s.created_at <=', $end);
 
         $model->groupBy('s.id');
         $model->orderBy('s.created_at','DESC');

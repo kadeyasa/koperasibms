@@ -264,7 +264,7 @@
 																							<td><?php echo $row['no_rekening'];?></td>
 																							<td><?php echo $row['nama'];?></td>
 																							<td><?php echo $row['uraian'];?></td>
-																							<td><?php echo $row['debet'];?></td>
+																							<td><?php echo number_format($row['debet']);?></td>
 																							<td><a href="<?php echo $row['photo_buku'];?>" target="__blank"><img src="<?php echo $row['photo_buku'];?>" width="200"></a></td>
 																							<td><?php echo $status;?></td>
                                                                                             <td>
