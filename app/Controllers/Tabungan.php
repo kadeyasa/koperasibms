@@ -182,9 +182,17 @@ class Tabungan extends BaseController
             // Apply 'like' condition for nasabah's name if keyword is present
             $model->where('s.created_at >=', $start);  // Use alias 'n' for tbnasabah_tabungan
             $model->where('s.created_at <=', $end);
-
-            $totalmutasi_pending = $model->gettotalmutasi($start,$end,0)->totalmutasi;
-            $totalmutasi_sukses = $model->gettotalmutasi($start,$end,1)->totalmutasi;
+            if($model->gettotalmutasi($start,$end,0)){
+                $totalmutasi_pending = $model->gettotalmutasi($start,$end,0)->totalmutasi;
+            }else{
+                $totalmutasi_pending = 0;
+            }
+            if($model->gettotalmutasi($start,$end,1)){
+                $totalmutasi_sukses = $model->gettotalmutasi($start,$end,1)->totalmutasi;
+            }else{
+                $totalmutasi_sukses = 0;
+            }
+            
         }else{
             $totalmutasi_pending =0;
             $totalmutasi_sukses = 0;
