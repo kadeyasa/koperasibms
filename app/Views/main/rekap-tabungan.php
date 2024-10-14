@@ -144,7 +144,7 @@
                                                                     </div>
                                                                     <!--begin::Card title-->
                                                                     <!--begin::Card toolbar-->
-																	<?php echo form_open('kunjunganwajib',array('method'=>'get'));?>
+																	<?php echo form_open('rekap-tabungan',array('method'=>'get'));?>
                                                                     <div class="card-toolbar">
                                                                         <!--begin::Toolbar-->
 																		<!--begin::Add customer-->
@@ -223,10 +223,11 @@
                                                                             <button class="btn btn-primary">Cari</button>
                                                                         </div>
                                                                     </div>
+                                                                    <hr/>
                                                                     <?php echo form_close();?>
 																	<div class="table-responsive">
 																		<!--begin::Table-->
-																		<h3>Data Kunjungan Wajib</h3>
+																		
 																		<table class="table align-middle table-row-dashed fs-6 gy-5">
 																			<!--begin::Table head-->
 																			<thead>
@@ -270,7 +271,7 @@
                                                                                                 <?php
                                                                                                 if(session('userlevel')==3 || session('userlevel')==6){ 
                                                                                                     if($row['status']==0){
-                                                                                                        echo '<a href="#" class="btn btn-success" onclick="approvetabungan('.$row['id'].');">Approve</a>';
+                                                                                                        echo '<a href="'.site_url('approvetabungan?id='.$row['id']).'" class="btn btn-success">Approve</a>';
                                                                                                     }
                                                                                                 }
                                                                                                 ?>
@@ -350,8 +351,6 @@
 		<script src="assets/js/custom/utilities/modals/users-search.js"></script>
         <script src="assets/js/custom/apps/ecommerce/customers/listing/add-setupbiaya.js"></script>
         <script src="assets/js/custom/apps/ecommerce/customers/listing/listing-setupbiaya.js"></script>
-		<script type="text/javascript">
-
-		</script>
+		
 
 </html>

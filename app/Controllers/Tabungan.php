@@ -175,8 +175,17 @@ class Tabungan extends BaseController
             // Apply 'like' condition for nasabah's name if keyword is present
             $model->like('n.nama', $keyword);  // Use alias 'n' for tbnasabah_tabungan
         }
+
+        if (isset($_GET['start']) && !empty($_GET['start'])) {
+            $start = $_GET['start'];
+            $end = $_GET['end'];
+            // Apply 'like' condition for nasabah's name if keyword is present
+            $model->where('s.created_at >=', $start);  // Use alias 'n' for tbnasabah_tabungan
+            $model->where('s.created_at <=', $end);
+        }
+
         $model->groupBy('s.id');
-        $model->orderBy('s.created_at');
+        $model->orderBy('s.created_at','DESC');
         // Retrieve all matching records
         $results = $model->findAll();
         $data = array(
@@ -186,6 +195,40 @@ class Tabungan extends BaseController
             return view('main/rekap-tabungan',$data);
         }else{
             return view('member/profile',$data);
+        }
+    }
+
+    function approvetabungan(){
+        if (isset($_GET['id']) && !empty($_GET['id'])) {
+            $model = NEW Mutasitabunganmodel();
+            $check = $model->where('id',$id)->first();
+            if($check['status']==0){
+                //check saldo
+                $saldomodel = NEW Tabunganmodel();
+                $check_saldo = $saldomodel->where('id_nasabah',$check['id_nasabah'])->first();
+                $new_saldo = $check_saldo['saldo']+$check['debet'];
+                $dataupdate = array(
+                    'saldo'=>$new_saldo
+                );
+                if($saldomodel->update($check_saldo['id'],$dataupdate)){
+                    //set status 
+                    $datamutasi=array(
+                        'status'=>1
+                    );
+                    $model->update($check['id'],$datamutasi);
+                    return redirect('rekap-tabungan');
+                }
+            }else{
+                
+                session()->setFlashdata('error','Tabungan sudah di approve');
+                return redirect()->back();
+               
+            }
+        }else{
+            
+            session()->setFlashdata('error','Invalid ID');
+            return redirect()->back();
+            
         }
     }
 }
