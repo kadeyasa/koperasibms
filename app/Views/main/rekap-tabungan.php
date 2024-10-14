@@ -238,7 +238,7 @@
                                                                                     <th class="min-w-125px">Tgl</th>
                                                                                     <th class="min-w-125px">No Rekening</th>
                                                                                     <th class="min-w-125px">Nama</th>
-                                                                                    <th class="min-w-125px">Alamat</th>
+                                                                                    <th class="min-w-125px">Uraian</th>
 																					<th class="min-w-125px">Debet</th>
 																					<th class="min-w-125px">Photo</th>
                                                                                     <th class="min-w-125px">Status</th>
@@ -251,7 +251,7 @@
 																			<tbody class="fw-semibold text-gray-600">
 																				<?php
 																					foreach($results as $row){
-                                                                                        if($row['status']=0){
+                                                                                        if($row['status']==0){
                                                                                             $status ='Pending';
                                                                                         }else{
                                                                                             $status = 'Approved';
@@ -262,7 +262,7 @@
 																							<td><?php echo $row['created_at'];?></td>
 																							<td><?php echo $row['no_rekening'];?></td>
 																							<td><?php echo $row['nama'];?></td>
-																							<td><?php echo $row['alamat'];?></td>
+																							<td><?php echo $row['uraian'];?></td>
 																							<td><?php echo $row['debet'];?></td>
 																							<td><a href="<?php echo $row['photo_buku'];?>" target="__blank"><img src="<?php echo $row['photo_buku'];?>" width="200"></a></td>
 																							<td><?php echo $status;?></td>
@@ -351,7 +351,7 @@
         <script src="assets/js/custom/apps/ecommerce/customers/listing/add-setupbiaya.js"></script>
         <script src="assets/js/custom/apps/ecommerce/customers/listing/listing-setupbiaya.js"></script>
 		<script type="text/javascript">
-        
+
 		</script>
 
 </html>
