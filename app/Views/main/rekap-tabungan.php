@@ -232,6 +232,7 @@
                                                                                     <th class="min-w-125px">Nama</th>
                                                                                     <th class="min-w-125px">Uraian</th>
 																					<th class="min-w-125px">Debet</th>
+                                                                                    <th class="min-w-125px">Saldo</th>
 																					<th class="min-w-125px">Photo</th>
                                                                                     <th class="min-w-125px">Status</th>
                                                                                     <th class="min-w-125px">Action</th>
@@ -256,6 +257,7 @@
 																							<td><?php echo $row['nama'];?></td>
 																							<td><?php echo $row['uraian'];?></td>
 																							<td><?php echo number_format($row['debet']);?></td>
+                                                                                            <td><?php echo number_format($row['saldo']);?></td>
 																							<td><a href="<?php echo $row['photo_buku'];?>" target="__blank"><img src="<?php echo $row['photo_buku'];?>" width="200"></a></td>
 																							<td><?php echo $status;?></td>
                                                                                             <td>
