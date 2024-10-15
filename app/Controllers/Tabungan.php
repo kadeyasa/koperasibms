@@ -209,8 +209,8 @@ class Tabungan extends BaseController
         $model = NEW Mutasitabunganmodel();
         $model->select("s.*, n.no_rekening,n.nama,n.alamat,b.saldo")
             ->from("tb_mutasi_tabungan as s")  // Alias for tb_saldo_tabungan
-            ->join('tb_saldo_tabungan b','n.id=b.id_nasabah')
-            ->join('tbnasabah_tabungan as n', 'n.id = s.id_nasabah','left');  // Alias for tbnasabah_tabungan
+            ->join('tbnasabah_tabungan as n', 'n.id = s.id_nasabah','left')
+            ->join('tb_saldo_tabungan as b', 'n.id = b.id_nasabah','left');  // Alias for tbnasabah_tabungan
 
         // Check if a keyword is set and not empty
         if (isset($_GET['keyword']) && !empty($_GET['keyword'])) {
